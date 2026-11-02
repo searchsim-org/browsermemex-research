@@ -2,13 +2,14 @@
 
 BrowserMemex's main extension repository is [searchsim-org/browser-memex](https://github.com/searchsim-org/browser-memex), with installation information at [browsermemex.com](https://browsermemex.com). This repository publishes the evaluated research companion: frozen core source, protocols, generated inputs, raw outputs, method reports and reproduction tools. It contains no paper draft, reviewer reports, credentials, or installed dependencies.
 
-The companion evaluates shared-memory mechanisms, temporal replay, governance policies, routing and workflow-admission components. Browser-worker replay, OPFS reload and independent SQLite readout are bounded tests of the actual core. They do **not** establish installed-extension validation, autonomous-agent success, all model backends, or a user study. Companion policies and the pinned core are distinguished; neither is silently substituted for the separately distributed extension binary.
+The companion evaluates shared-memory mechanisms, temporal replay, governance policies, routing and workflow-admission components. Browser-worker replay, OPFS reload and independent SQLite readout are bounded tests of the actual core. A separate fresh-profile Chromium 148 test loads the connector candidate and verifies three writes followed by three value-and-provenance reads through separate MCP SDK processes. This does not establish autonomous-agent success, all model backends, or a user study. The original installed-version write failures are preserved. Companion policies and the pinned core are distinguished; neither is silently substituted for the separately distributed extension binary.
 
 ## Obtain and verify the exact artifact
 
 ```sh
 git clone https://github.com/searchsim-org/browsermemex-research.git
 cd browsermemex-research
+git checkout v1.3.0
 python3 scripts/unpack.py --verify-only
 python3 scripts/unpack.py
 ```
@@ -62,4 +63,10 @@ python3 scripts/dense-retrieval.py
 
 The script downloads external model files anonymously at the pinned revision and verifies their hashes before inference. Model weights stay under the excluded `data/external/` directory and are not part of the public artifact. Published embeddings are derived from the upstream LongMemEval material using the Apache-2.0 MiniLM model; they retain applicable upstream data/model terms and are **not** assigned the synthetic BMTR data's CC0 license. A successful core CI run does not assert that dense inference or optional dense fingerprints were reproduced.
 
-The manually dispatched **Fresh dense retrieval reproduction** workflow downloads the pinned public benchmark and model weights, executes the real CPU encoder without cached-vector reuse, and checks all500question/metric records against frozen outputs. Raw floating-point similarities and tie ordering can vary across CPU platforms; the validator reports ranking differences separately while requiring exact evidence-recall metrics. This is separate from the core13-fingerprint reproduction workflow.
+The manually dispatched **Fresh dense retrieval reproduction** workflow downloads the pinned public benchmark and model weights, executes the real CPU encoder without cached-vector reuse, and checks all 500 question/metric records against frozen outputs. Raw floating-point similarities and tie ordering can vary across CPU platforms; the validator reports ranking differences separately while requiring exact evidence-recall metrics. This is separate from the core 13-fingerprint reproduction workflow.
+
+## Verified public reproduction and connector candidate
+
+At commit `7952833f7b4eab3f778eb09c423ca325d6402ef4`, the [fresh core workflow](https://github.com/searchsim-org/browsermemex-research/actions/runs/41424906672) matched all 13 scientific fingerprints. The separate [fresh dense workflow](https://github.com/searchsim-org/browsermemex-research/actions/runs/41424907485) downloaded the pinned data/model, ran the real CPU encoder without cached vectors, and matched all 500 question metric records and rankings. These are completed checks, not a claim that timing is platform independent.
+
+The v1.3.0 release supplies the connector candidate archive separately. Its source patch, before/after hashes, original failures, strict SDK client, fresh-browser protocol, and raw value/provenance responses are under `evaluation/connector-fix/` and `docs/CONNECTOR-FIX-RESULTS.md`. The candidate corrects static memory capture and query-provenance hydration. It does not update an existing browser installation. The fresh-browser check used a separate relay and disabled native messaging; it did not use a user's browser profile. Other optional dynamic-import paths remain outside this repair.

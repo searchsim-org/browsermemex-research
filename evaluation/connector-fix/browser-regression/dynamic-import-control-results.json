@@ -1,0 +1,237 @@
+{
+  "started": "2026-11-02T10:51:15.496Z",
+  "scope": "fresh-profile headless Chromium candidate test through actual MCP bridge; not user-installed Chrome or autonomous runtimes",
+  "relayPort": 7863,
+  "profileFresh": true,
+  "profileWasPreexisting": false,
+  "extensionManifest": {
+    "manifest_version": 3,
+    "name": "BrowserMemex",
+    "version": "1.0.0",
+    "description": "Connect AI coding agents, manage memory and skills, schedule recurring web tasks — all from your browser.",
+    "icons": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    },
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage",
+      "tabs",
+      "downloads",
+      "identity",
+      "alarms",
+      "bookmarks",
+      "history",
+      "notifications",
+      "sidePanel"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+    },
+    "action": {
+      "default_title": "BrowserMemex",
+      "default_popup": "src/popup/popup.html",
+      "default_icon": {
+        "16": "icons/icon-16.png",
+        "32": "icons/icon-32.png",
+        "48": "icons/icon-48.png"
+      }
+    },
+    "side_panel": {
+      "default_path": "dist/sidepanel.html"
+    },
+    "background": {
+      "service_worker": "dist/service-worker.js",
+      "type": "module"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "icons/*.png"
+        ],
+        "matches": [
+          "<all_urls>"
+        ]
+      }
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": [
+          "src/content/accessibility-tree.js"
+        ],
+        "run_at": "document_start",
+        "all_frames": true
+      },
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": [
+          "src/content/content.js",
+          "src/content/agent-visual-indicator.js",
+          "src/content/dom-tagging.js",
+          "src/content/selection-toolbar.js"
+        ],
+        "run_at": "document_end",
+        "all_frames": false
+      }
+    ]
+  },
+  "candidateSourceSha256": "ebf018fa59020a8992b35a2d62c56f384829efb255242b1a8ac2a70ed764f949",
+  "builtWorkerSha256": "5058f7cefc1ee958d6fbcb9d40cc242a629fad8ccfca2fc3a3ec8494e0a8335e",
+  "testManifestSha256": "35e37b95aea27a0d5492037a3b3031381dfdc8b2f03bb9ef8712e838a2c6c2eb",
+  "changesFromCandidate": [
+    "default relay port 7862 -> 7863",
+    "test manifest omits nativeMessaging permission to prevent host inbox access"
+  ],
+  "fixture": {
+    "run": "bmrepro2a378589d4ef60",
+    "facts": [
+      {
+        "subject": "bmrepro2a378589d4ef600",
+        "value": "amber2714"
+      },
+      {
+        "subject": "bmrepro2a378589d4ef601",
+        "value": "violet6381"
+      },
+      {
+        "subject": "bmrepro2a378589d4ef602",
+        "value": "cobalt9052"
+      }
+    ]
+  },
+  "writer": {
+    "exitCode": 2,
+    "stdout": "{\"role\":\"writer\",\"pid\":63145,\"outcomes\":[{\"subject\":\"bmrepro2a378589d4ef600\",\"expected\":\"amber2714\",\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"window is not defined\"}],\"isError\":true},\"decoded\":null,\"pass\":false},{\"subject\":\"bmrepro2a378589d4ef601\",\"expected\":\"violet6381\",\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"window is not defined\"}],\"isError\":true},\"decoded\":null,\"pass\":false},{\"subject\":\"bmrepro2a378589d4ef602\",\"expected\":\"cobalt9052\",\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"window is not defined\"}],\"isError\":true},\"decoded\":null,\"pass\":false}],\"pass\":false}\n",
+    "stderr": "",
+    "data": {
+      "role": "writer",
+      "pid": 63145,
+      "outcomes": [
+        {
+          "subject": "bmrepro2a378589d4ef600",
+          "expected": "amber2714",
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "window is not defined"
+              }
+            ],
+            "isError": true
+          },
+          "decoded": null,
+          "pass": false
+        },
+        {
+          "subject": "bmrepro2a378589d4ef601",
+          "expected": "violet6381",
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "window is not defined"
+              }
+            ],
+            "isError": true
+          },
+          "decoded": null,
+          "pass": false
+        },
+        {
+          "subject": "bmrepro2a378589d4ef602",
+          "expected": "cobalt9052",
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "window is not defined"
+              }
+            ],
+            "isError": true
+          },
+          "decoded": null,
+          "pass": false
+        }
+      ],
+      "pass": false
+    }
+  },
+  "reader": {
+    "exitCode": 2,
+    "stdout": "{\"role\":\"reader\",\"pid\":63147,\"outcomes\":[{\"subject\":\"bmrepro2a378589d4ef600\",\"expected\":\"amber2714\",\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]},\"decoded\":[],\"pass\":false},{\"subject\":\"bmrepro2a378589d4ef601\",\"expected\":\"violet6381\",\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]},\"decoded\":[],\"pass\":false},{\"subject\":\"bmrepro2a378589d4ef602\",\"expected\":\"cobalt9052\",\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]},\"decoded\":[],\"pass\":false}],\"pass\":false}\n",
+    "stderr": "",
+    "data": {
+      "role": "reader",
+      "pid": 63147,
+      "outcomes": [
+        {
+          "subject": "bmrepro2a378589d4ef600",
+          "expected": "amber2714",
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "[]"
+              }
+            ]
+          },
+          "decoded": [],
+          "pass": false
+        },
+        {
+          "subject": "bmrepro2a378589d4ef601",
+          "expected": "violet6381",
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "[]"
+              }
+            ]
+          },
+          "decoded": [],
+          "pass": false
+        },
+        {
+          "subject": "bmrepro2a378589d4ef602",
+          "expected": "cobalt9052",
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "[]"
+              }
+            ]
+          },
+          "decoded": [],
+          "pass": false
+        }
+      ],
+      "pass": false
+    }
+  },
+  "pass": false,
+  "playwrightVersion": "1.60.0",
+  "executable": "/Users/dndesign/Library/Caches/ms-playwright/chromium-1223/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing",
+  "browserVersion": "148.0.7778.96",
+  "loadedServiceWorkerUrls": [
+    "chrome-extension://mpklamjhlnebhbjoaffdikkkkoplkebp/dist/service-worker.js"
+  ],
+  "relayStatus": {
+    "extensionConnected": true,
+    "clients": 1
+  },
+  "extensionConnectedAt": "2026-11-02T10:53:17.378Z",
+  "finished": "2026-11-02T10:53:21.916Z"
+}

@@ -532,8 +532,13 @@ async function dispatchMemexOp(op, args) {
   const pid = activeProfileId();
 
   switch (op) {
-    case 'memory.query':
-      return s.nuggetStore.query(args.text ?? '', { ...(args.options ?? {}), profileId: pid });
+    case 'memory.query': {
+      const hits = s.nuggetStore.query(args.text ?? '', { ...(args.options ?? {}), profileId: pid });
+      // Hydrate provenance only for the IDs already authorized by profile filtering.
+      return hits.map(hit => ({ ...hit, nugget: { ...hit.nugget,
+        provenance: s.nuggetStore.provenance(hit.nugget.id),
+      } }));
+    }
     case 'memory.get':
       return s.nuggetStore.get(args.id);
     case 'memory.count':

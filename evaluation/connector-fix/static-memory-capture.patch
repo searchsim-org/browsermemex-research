@@ -11,7 +11,23 @@
  
  const NATIVE_HOST_NAME = 'com.browser_memex.oauth_host';
  const POLL_INTERVAL_MS = 500;
-@@ -538,7 +542,6 @@
+@@ -528,8 +532,13 @@
+   const pid = activeProfileId();
+ 
+   switch (op) {
+-    case 'memory.query':
+-      return s.nuggetStore.query(args.text ?? '', { ...(args.options ?? {}), profileId: pid });
++    case 'memory.query': {
++      const hits = s.nuggetStore.query(args.text ?? '', { ...(args.options ?? {}), profileId: pid });
++      // Hydrate provenance only for the IDs already authorized by profile filtering.
++      return hits.map(hit => ({ ...hit, nugget: { ...hit.nugget,
++        provenance: s.nuggetStore.provenance(hit.nugget.id),
++      } }));
++    }
+     case 'memory.get':
+       return s.nuggetStore.get(args.id);
+     case 'memory.count':
+@@ -538,7 +547,6 @@
        // Privacy-enforcing capture path. Used by external agents to deposit
        // facts they discover during browsing. Sticks credentials redaction
        // + disabledDomains check between the agent and the store.

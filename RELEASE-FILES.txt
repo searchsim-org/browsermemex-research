@@ -39,7 +39,17 @@ evaluation/browser/sqlite/index.mjs.gz
 evaluation/browser/sqlite/sqlite3-opfs-async-proxy.js
 evaluation/browser/sqlite/sqlite3.wasm.gz
 evaluation/browser/worker.mjs
+evaluation/connector-fix/browser-regression/PROTOCOL-ADDENDUM.md
+evaluation/connector-fix/browser-regression/dynamic-import-control-fixture.json
+evaluation/connector-fix/browser-regression/dynamic-import-control-results.json
+evaluation/connector-fix/browser-regression/dynamic-import-control.patch
+evaluation/connector-fix/browser-regression/fixed-candidate-fixture.json
+evaluation/connector-fix/browser-regression/fixed-candidate-results.json
+evaluation/connector-fix/browser-regression/fixed-provenance-fixture.json
+evaluation/connector-fix/browser-regression/fixed-provenance-success.json
 evaluation/connector-fix/browser-regression/fixture.json
+evaluation/connector-fix/browser-regression/initial-relay-permission-failure.json
+evaluation/connector-fix/browser-regression/pre-provenance-fix.json
 evaluation/connector-fix/browser-regression/results.json
 evaluation/connector-fix/browser-regression/run.mjs
 evaluation/connector-fix/browser-regression/sdk-client.mjs

@@ -4,13 +4,14 @@
   "changedFiles": {
     "packages/extension/src/background/modules/mcp-bridge.js": {
       "beforeSha256": "a3d24d8521edb4eb70b8c05e66b978998ad5e815334c764e39b988754dc17655",
-      "afterSha256": "10cc0dd7c61498ac86daf14e50adf51f73be678f075ab278d96e4626cec35674"
+      "afterSha256": "82eb8a77541a3c8417d03912119705a82a2c3b7837a9158e446a1498a3cb8870"
     }
   },
-  "builtServiceWorkerSha256": "3c50167941a3cc6b50bab70d62a9561ffde9ec02efa4de8803b0d3cc038abf5f",
+  "builtServiceWorkerSha256": "fd7d2317d5591828ba6a15601e96a9f747ff812c6893502e136cf54675598864",
   "candidateArtifact": {
     "directory": "/Users/dndesign/Desktop/ecir27-resources/browsermemex-artifact/chrome-connector-candidate",
     "zip": "/Users/dndesign/Desktop/ecir27-resources/browsermemex-artifact/browser-memex-chrome-connector-candidate-1.0.0.zip",
-    "zipSha256": "59cfc07fd2bac8980a47f5b5d2a686a82da01a087474743f44250dc5a51c0d3e"
-  }
+    "zipSha256": "df87d3ab2b774935c533c5c1c697f512c1281c853b1f5085a35feaebe1e6cf13"
+  },
+  "queryProvenanceHydration": true
 }

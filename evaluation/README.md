@@ -88,6 +88,6 @@ The research companion ZIP now preserves the project root, including `evaluation
 
 ## Executed repair and robustness extensions
 
-`node scripts/episode-repair.mjs` executes immutable-episode policies on the original inputs and the separately versioned20-world temporal/provenance stress collection. `python3 scripts/independent-backend.py` uses the pinned requirements in `requirements-independent-backend.txt`; `node scripts/repeated-scale.mjs` runs the40process-isolated insertion/update cases. Protocols and result reports distinguish known origin labels from inferred independence, lexical backend parity from full graph-memory evaluation, and repeated10k measurements from the earlier single100k run.
+`node scripts/episode-repair.mjs` executes immutable-episode policies on the original inputs and the separately versioned 20-world temporal/provenance stress collection. `python3 scripts/independent-backend.py` uses the pinned requirements in `requirements-independent-backend.txt`; `node scripts/repeated-scale.mjs` runs the 40 process-isolated insertion/update cases. Protocols and result reports distinguish known origin labels from inferred independence, lexical backend parity from full graph-memory evaluation, and repeated 10k measurements from the earlier single100k run.
 
 The connector's installed-write failures, static-import patch and separate candidate regressions are in `connector-fix/` and `../docs/CONNECTOR-FIX-RESULTS.md`. Do not relabel offline worker or isolated-candidate results as a successful reload of the user's installed extension.

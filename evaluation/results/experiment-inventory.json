@@ -14,12 +14,31 @@
   "ablationOutcomes": 132000,
   "routingDecisions": 45000,
   "numericSkillAttempts": 4408,
-  "newModelCalls": 0,
   "publicQuestions": 500,
   "recallEligibleQuestions": 470,
   "scaleSizes": [
     1000,
     10000,
     100000
-  ]
+  ],
+  "episodeRepairOriginalSecondaryOutcomes": 264000,
+  "stressIndependentWorlds": 20,
+  "stressFactorConfigurations": 160,
+  "stressQueryInstances": 42240,
+  "stressMethodOutcomes": 211200,
+  "independentLexicalOutcomes": 158400,
+  "repeatedScaleCases": 40,
+  "repeatedScaleInitialInsertions": 220000,
+  "repeatedScaleConflictingUpdates": 22000,
+  "repeatedScaleQueryChecks": 32000,
+  "denseQuestions": 500,
+  "denseEvidenceEligibleQuestions": 470,
+  "denseDistinctQuestionSessionCandidates": 23854,
+  "denseEncoderInputs": 18964,
+  "denseEncoderForwardBatches": 1186,
+  "densePaidApiCalls": 0,
+  "orchestrationLlmCalls": 0,
+  "publicCompanion": "https://github.com/searchsim-org/browsermemex-research",
+  "freshCoreReproduction": "https://github.com/searchsim-org/browsermemex-research/actions/runs/41396699967",
+  "freshCoreReproductionConclusion": "success"
 }

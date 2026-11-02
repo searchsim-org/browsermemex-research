@@ -1,8 +1,8 @@
 # Connector memory-write fix: candidate build and offline regression
 
-Status: **source/build candidate verified offline; installed-extension writes remain failed and have not been rerun after reload.** No browser UI, reload, CDP, internal pages, credentials, installed profile queries or model calls were used for this diagnosis/fix.
+Status: **candidate verified offline and in a fresh-profile headless Chromium extension test; the user-installed extension retains its original recorded write failures and was not reloaded.** No user browser UI, manual CDP, internal-page inspection, credentials, private profile queries or model calls were used.
 
-The authoritative original connector attempt is retained in `evaluation/results/cross-client-sdk-results.json`. Its three failed writes must not be replaced with the three successful **offline synthetic** writes described here. No claim of successful installed cross-client memory handoff follows from this candidate.
+The authoritative original connector attempt is retained in `evaluation/results/cross-client-sdk-results.json`. Its three failed writes remain unchanged. Separate offline and fresh-browser successes below must not be substituted for those original installed-extension results.
 
 ## Cause supported by source and emitted code
 
@@ -15,6 +15,8 @@ Chrome's [extension service-worker documentation](https://developer.chrome.com/d
 ## Minimal change
 
 `evaluation/connector-fix/static-memory-capture.patch` adds a static `captureFact` import in `packages/extension/src/background/modules/mcp-bridge.js` and removes the `await import('./nugget-memory.js')` inside the write branch. The existing privacy-enforcing capture function remains the write path: the fix does not bypass disabled-memory, blocked-domain or URL-redaction policy.
+
+A second change hydrates each returned query hit with `NuggetStore.provenance(id)` only after the actual query has applied profile filtering. The first fresh-browser candidate wrote and retrieved the right values but omitted the provenance array, failing the original strict reader assertion. The assertion was retained and the transport response was corrected.
 
 The source checkout `/Users/dndesign/Downloads/browser-memex` was already extensively modified before this task. To avoid overwriting those changes or the installed artifact, the exact working files were copied to `/private/tmp/browsermemex-connector-fix-stage`, the narrow patch was applied there, and the normal Chrome build ran in that isolated copy. **Downloads source and existing built outputs were not modified.** The patch is against the current working file, not an assertion that upstream HEAD matches the installed binary.
 
@@ -52,4 +54,25 @@ The regression uses the source checkout's existing `esbuild` and SQLite dependen
 - Installable candidate directory: `/Users/dndesign/Desktop/ecir27-resources/browsermemex-artifact/chrome-connector-candidate`
 - Candidate zip: `/Users/dndesign/Desktop/ecir27-resources/browsermemex-artifact/browser-memex-chrome-connector-candidate-1.0.0.zip`
 
-The candidate is deliberately labeled separately and retains its original manifest version. It is not installed, reloaded or published. A later authorized installed test must load this candidate, rerun the connector protocol, and record fresh results before any installed write success is claimed. Frozen `evaluation/vendor` and existing replay measurements were not changed.
+The production candidate is deliberately labeled separately and retains manifest version 1.0.0. It was loaded only as the isolated test configuration described below, not into the user's existing Chrome profile. Frozen `evaluation/vendor` and existing replay measurements were not changed.
+
+## Version and evidence boundaries
+
+The v1.2.0 research companion contained the static-import candidate and its offline-only evidence. The v1.3.0 revision adds query-provenance hydration and the fresh-browser connector validation described here. These are research-companion versions; the candidate extension manifest remains 1.0.0. A public companion release does not update the user's installed extension.
+
+## Actual fresh-browser connector result
+
+The final fixed test build passed on 2 November 2026 (10:48:02–10:50:09 UTC). Official Playwright 1.60.0 launched matching bundled Chromium 148.0.7778.96/revision 1223 in a newly created profile. The actual MV3 extension registered through its ordinary two-minute alarm with the separate loopback relay on port 7863. No worker evaluation or fixture services were injected. The test used actual profile boot, actual SQLite store, ordinary MCP request dispatch and the privacy-enforcing capture path.
+
+Writer SDK process 62847 deposited three synthetic facts and exited. Reader SDK process 62849 then retrieved all three expected subject/value pairs, each with the writer's `research-client-a` identity in the provenance array. Both client processes exited zero. `browser-regression/fixed-provenance-success.json` retains all raw requests/responses, source/worker hashes, engine version and process identities. This is a process handoff through a real candidate extension, not a claim about autonomous named agent runtimes.
+
+The test configuration changes only the default relay port (7862→7863) and removes the `nativeMessaging` permission, preventing any machine-level native-host inbox access. Those differences are preserved in `test-relay-port.patch` and `test-native-messaging-disabled.patch`. The production candidate still uses port 7862 and its original permissions. It was neither installed nor reloaded into the user's existing browser.
+
+Earlier observations remain distinct:
+
+- `browser-regression/initial-relay-permission-failure.json` and `.log`: sandbox loopback bind failure before browser launch.
+- `browser-regression/pre-provenance-fix.json`: first actual fresh-browser attempt, three successful writes and three correct-value reads, failing because query results omitted provenance.
+- `browser-regression/fixed-provenance-success.json`: three writes and three value-plus-provenance reads pass after hydration, with no relaxation of the reader assertion.
+- `evaluation/results/cross-client-sdk-results.json`: unchanged original user-installed extension, three `window is not defined` write failures and empty subsequent reads.
+
+The dynamic-import causal control completed on the same Chromium 148.0.7778.96 engine (10:51:15–10:53:21 UTC), with identical safety manifest, relay port and query hydration. Restoring the dynamic capture import reproduces `window is not defined` on all three writes; subsequent reads are empty. Raw harness `pass:false` is retained as an expected failing control rather than relabeled as successful writes. `browser-regression/dynamic-import-control-results.json`, its fixture and relay log preserve this result. The source diff and build log identify the controlled change. The protocol and reproduction boundary are in `browser-regression/PROTOCOL-ADDENDUM.md`.

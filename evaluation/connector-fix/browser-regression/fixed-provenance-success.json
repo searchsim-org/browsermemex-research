@@ -1,0 +1,381 @@
+{
+  "started": "2026-11-02T10:48:02.906Z",
+  "scope": "fresh-profile headless Chromium candidate test through actual MCP bridge; not user-installed Chrome or autonomous runtimes",
+  "relayPort": 7863,
+  "profileFresh": true,
+  "profileWasPreexisting": false,
+  "extensionManifest": {
+    "manifest_version": 3,
+    "name": "BrowserMemex",
+    "version": "1.0.0",
+    "description": "Connect AI coding agents, manage memory and skills, schedule recurring web tasks — all from your browser.",
+    "icons": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    },
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage",
+      "tabs",
+      "downloads",
+      "identity",
+      "alarms",
+      "bookmarks",
+      "history",
+      "notifications",
+      "sidePanel"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+    },
+    "action": {
+      "default_title": "BrowserMemex",
+      "default_popup": "src/popup/popup.html",
+      "default_icon": {
+        "16": "icons/icon-16.png",
+        "32": "icons/icon-32.png",
+        "48": "icons/icon-48.png"
+      }
+    },
+    "side_panel": {
+      "default_path": "dist/sidepanel.html"
+    },
+    "background": {
+      "service_worker": "dist/service-worker.js",
+      "type": "module"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "icons/*.png"
+        ],
+        "matches": [
+          "<all_urls>"
+        ]
+      }
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": [
+          "src/content/accessibility-tree.js"
+        ],
+        "run_at": "document_start",
+        "all_frames": true
+      },
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": [
+          "src/content/content.js",
+          "src/content/agent-visual-indicator.js",
+          "src/content/dom-tagging.js",
+          "src/content/selection-toolbar.js"
+        ],
+        "run_at": "document_end",
+        "all_frames": false
+      }
+    ]
+  },
+  "candidateSourceSha256": "ac76f384c7df13104904d38613282ea21089a9fd7879c0e688140ed393a5e068",
+  "builtWorkerSha256": "37fd39ccb04fbc92042daf348f7445f08890e7de1afba050d26a944113e4a3dc",
+  "testManifestSha256": "35e37b95aea27a0d5492037a3b3031381dfdc8b2f03bb9ef8712e838a2c6c2eb",
+  "changesFromCandidate": [
+    "default relay port 7862 -> 7863",
+    "test manifest omits nativeMessaging permission to prevent host inbox access"
+  ],
+  "fixture": {
+    "run": "bmreprob31ccb669b5466",
+    "facts": [
+      {
+        "subject": "bmreprob31ccb669b54660",
+        "value": "amber2714"
+      },
+      {
+        "subject": "bmreprob31ccb669b54661",
+        "value": "violet6381"
+      },
+      {
+        "subject": "bmreprob31ccb669b54662",
+        "value": "cobalt9052"
+      }
+    ]
+  },
+  "writer": {
+    "exitCode": 0,
+    "stdout": "{\"role\":\"writer\",\"pid\":62847,\"outcomes\":[{\"subject\":\"bmreprob31ccb669b54660\",\"expected\":\"amber2714\",\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"outcome\\\":\\\"new_key\\\",\\\"nuggetId\\\":\\\"97dce068b90bdc84\\\",\\\"candidateStatus\\\":\\\"Active\\\",\\\"appliedUpdates\\\":[]}\"}]},\"decoded\":{\"outcome\":\"new_key\",\"nuggetId\":\"97dce068b90bdc84\",\"candidateStatus\":\"Active\",\"appliedUpdates\":[]},\"pass\":true},{\"subject\":\"bmreprob31ccb669b54661\",\"expected\":\"violet6381\",\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"outcome\\\":\\\"new_key\\\",\\\"nuggetId\\\":\\\"80f03a3700d9b8c3\\\",\\\"candidateStatus\\\":\\\"Active\\\",\\\"appliedUpdates\\\":[]}\"}]},\"decoded\":{\"outcome\":\"new_key\",\"nuggetId\":\"80f03a3700d9b8c3\",\"candidateStatus\":\"Active\",\"appliedUpdates\":[]},\"pass\":true},{\"subject\":\"bmreprob31ccb669b54662\",\"expected\":\"cobalt9052\",\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"outcome\\\":\\\"new_key\\\",\\\"nuggetId\\\":\\\"5c66cc1b00610428\\\",\\\"candidateStatus\\\":\\\"Active\\\",\\\"appliedUpdates\\\":[]}\"}]},\"decoded\":{\"outcome\":\"new_key\",\"nuggetId\":\"5c66cc1b00610428\",\"candidateStatus\":\"Active\",\"appliedUpdates\":[]},\"pass\":true}],\"pass\":true}\n",
+    "stderr": "",
+    "data": {
+      "role": "writer",
+      "pid": 62847,
+      "outcomes": [
+        {
+          "subject": "bmreprob31ccb669b54660",
+          "expected": "amber2714",
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"outcome\":\"new_key\",\"nuggetId\":\"97dce068b90bdc84\",\"candidateStatus\":\"Active\",\"appliedUpdates\":[]}"
+              }
+            ]
+          },
+          "decoded": {
+            "outcome": "new_key",
+            "nuggetId": "97dce068b90bdc84",
+            "candidateStatus": "Active",
+            "appliedUpdates": []
+          },
+          "pass": true
+        },
+        {
+          "subject": "bmreprob31ccb669b54661",
+          "expected": "violet6381",
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"outcome\":\"new_key\",\"nuggetId\":\"80f03a3700d9b8c3\",\"candidateStatus\":\"Active\",\"appliedUpdates\":[]}"
+              }
+            ]
+          },
+          "decoded": {
+            "outcome": "new_key",
+            "nuggetId": "80f03a3700d9b8c3",
+            "candidateStatus": "Active",
+            "appliedUpdates": []
+          },
+          "pass": true
+        },
+        {
+          "subject": "bmreprob31ccb669b54662",
+          "expected": "cobalt9052",
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"outcome\":\"new_key\",\"nuggetId\":\"5c66cc1b00610428\",\"candidateStatus\":\"Active\",\"appliedUpdates\":[]}"
+              }
+            ]
+          },
+          "decoded": {
+            "outcome": "new_key",
+            "nuggetId": "5c66cc1b00610428",
+            "candidateStatus": "Active",
+            "appliedUpdates": []
+          },
+          "pass": true
+        }
+      ],
+      "pass": true
+    }
+  },
+  "reader": {
+    "exitCode": 0,
+    "stdout": "{\"role\":\"reader\",\"pid\":62849,\"outcomes\":[{\"subject\":\"bmreprob31ccb669b54660\",\"expected\":\"amber2714\",\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"[{\\\"nugget\\\":{\\\"id\\\":\\\"97dce068b90bdc84\\\",\\\"kind\\\":\\\"SemanticFact\\\",\\\"fact\\\":{\\\"subject\\\":\\\"bmreprob31ccb669b54660\\\",\\\"predicate\\\":\\\"fixturevalue\\\",\\\"object\\\":\\\"amber2714\\\"},\\\"canonicalText\\\":\\\"bmreprob31ccb669b54660 fixturevalue amber2714\\\",\\\"validity\\\":{\\\"start\\\":1793616605389,\\\"end\\\":1794221405389,\\\"scope\\\":\\\"host:research.example.invalid\\\",\\\"sourceType\\\":\\\"unknown\\\",\\\"location\\\":\\\"research.example.invalid\\\"},\\\"epistemic\\\":{\\\"status\\\":\\\"Active\\\",\\\"rank\\\":\\\"Normal\\\",\\\"confidence\\\":0.9},\\\"nuggetKey\\\":\\\"bmreprob31ccb669b54660\\\\u0000fixturevalue\\\\u0000host:research.example.invalid\\\",\\\"parentId\\\":null,\\\"createdAt\\\":1793616605389,\\\"profileId\\\":\\\"default\\\",\\\"tier\\\":\\\"profile\\\",\\\"ownerSessionId\\\":null,\\\"ownerAgentId\\\":\\\"research-client-a\\\",\\\"provenance\\\":[{\\\"sourceUrl\\\":\\\"https://research.example.invalid/bmreprob31ccb669b54660\\\",\\\"domElementRef\\\":null,\\\"pageTitle\\\":null,\\\"screenshotHash\\\":null,\\\"extractedAt\\\":1793616605389,\\\"extractionSessionId\\\":null,\\\"agentId\\\":\\\"research-client-a\\\"}]},\\\"score\\\":0.5108256237659907}]\"}]},\"decoded\":[{\"nugget\":{\"id\":\"97dce068b90bdc84\",\"kind\":\"SemanticFact\",\"fact\":{\"subject\":\"bmreprob31ccb669b54660\",\"predicate\":\"fixturevalue\",\"object\":\"amber2714\"},\"canonicalText\":\"bmreprob31ccb669b54660 fixturevalue amber2714\",\"validity\":{\"start\":1793616605389,\"end\":1794221405389,\"scope\":\"host:research.example.invalid\",\"sourceType\":\"unknown\",\"location\":\"research.example.invalid\"},\"epistemic\":{\"status\":\"Active\",\"rank\":\"Normal\",\"confidence\":0.9},\"nuggetKey\":\"bmreprob31ccb669b54660\\u0000fixturevalue\\u0000host:research.example.invalid\",\"parentId\":null,\"createdAt\":1793616605389,\"profileId\":\"default\",\"tier\":\"profile\",\"ownerSessionId\":null,\"ownerAgentId\":\"research-client-a\",\"provenance\":[{\"sourceUrl\":\"https://research.example.invalid/bmreprob31ccb669b54660\",\"domElementRef\":null,\"pageTitle\":null,\"screenshotHash\":null,\"extractedAt\":1793616605389,\"extractionSessionId\":null,\"agentId\":\"research-client-a\"}]},\"score\":0.5108256237659907}],\"pass\":true},{\"subject\":\"bmreprob31ccb669b54661\",\"expected\":\"violet6381\",\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"[{\\\"nugget\\\":{\\\"id\\\":\\\"80f03a3700d9b8c3\\\",\\\"kind\\\":\\\"SemanticFact\\\",\\\"fact\\\":{\\\"subject\\\":\\\"bmreprob31ccb669b54661\\\",\\\"predicate\\\":\\\"fixturevalue\\\",\\\"object\\\":\\\"violet6381\\\"},\\\"canonicalText\\\":\\\"bmreprob31ccb669b54661 fixturevalue violet6381\\\",\\\"validity\\\":{\\\"start\\\":1793616605395,\\\"end\\\":1794221405395,\\\"scope\\\":\\\"host:research.example.invalid\\\",\\\"sourceType\\\":\\\"unknown\\\",\\\"location\\\":\\\"research.example.invalid\\\"},\\\"epistemic\\\":{\\\"status\\\":\\\"Active\\\",\\\"rank\\\":\\\"Normal\\\",\\\"confidence\\\":0.9},\\\"nuggetKey\\\":\\\"bmreprob31ccb669b54661\\\\u0000fixturevalue\\\\u0000host:research.example.invalid\\\",\\\"parentId\\\":null,\\\"createdAt\\\":1793616605395,\\\"profileId\\\":\\\"default\\\",\\\"tier\\\":\\\"profile\\\",\\\"ownerSessionId\\\":null,\\\"ownerAgentId\\\":\\\"research-client-a\\\",\\\"provenance\\\":[{\\\"sourceUrl\\\":\\\"https://research.example.invalid/bmreprob31ccb669b54661\\\",\\\"domElementRef\\\":null,\\\"pageTitle\\\":null,\\\"screenshotHash\\\":null,\\\"extractedAt\\\":1793616605395,\\\"extractionSessionId\\\":null,\\\"agentId\\\":\\\"research-client-a\\\"}]},\\\"score\\\":0.5108256237659907}]\"}]},\"decoded\":[{\"nugget\":{\"id\":\"80f03a3700d9b8c3\",\"kind\":\"SemanticFact\",\"fact\":{\"subject\":\"bmreprob31ccb669b54661\",\"predicate\":\"fixturevalue\",\"object\":\"violet6381\"},\"canonicalText\":\"bmreprob31ccb669b54661 fixturevalue violet6381\",\"validity\":{\"start\":1793616605395,\"end\":1794221405395,\"scope\":\"host:research.example.invalid\",\"sourceType\":\"unknown\",\"location\":\"research.example.invalid\"},\"epistemic\":{\"status\":\"Active\",\"rank\":\"Normal\",\"confidence\":0.9},\"nuggetKey\":\"bmreprob31ccb669b54661\\u0000fixturevalue\\u0000host:research.example.invalid\",\"parentId\":null,\"createdAt\":1793616605395,\"profileId\":\"default\",\"tier\":\"profile\",\"ownerSessionId\":null,\"ownerAgentId\":\"research-client-a\",\"provenance\":[{\"sourceUrl\":\"https://research.example.invalid/bmreprob31ccb669b54661\",\"domElementRef\":null,\"pageTitle\":null,\"screenshotHash\":null,\"extractedAt\":1793616605395,\"extractionSessionId\":null,\"agentId\":\"research-client-a\"}]},\"score\":0.5108256237659907}],\"pass\":true},{\"subject\":\"bmreprob31ccb669b54662\",\"expected\":\"cobalt9052\",\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"[{\\\"nugget\\\":{\\\"id\\\":\\\"5c66cc1b00610428\\\",\\\"kind\\\":\\\"SemanticFact\\\",\\\"fact\\\":{\\\"subject\\\":\\\"bmreprob31ccb669b54662\\\",\\\"predicate\\\":\\\"fixturevalue\\\",\\\"object\\\":\\\"cobalt9052\\\"},\\\"canonicalText\\\":\\\"bmreprob31ccb669b54662 fixturevalue cobalt9052\\\",\\\"validity\\\":{\\\"start\\\":1793616605397,\\\"end\\\":1794221405397,\\\"scope\\\":\\\"host:research.example.invalid\\\",\\\"sourceType\\\":\\\"unknown\\\",\\\"location\\\":\\\"research.example.invalid\\\"},\\\"epistemic\\\":{\\\"status\\\":\\\"Active\\\",\\\"rank\\\":\\\"Normal\\\",\\\"confidence\\\":0.9},\\\"nuggetKey\\\":\\\"bmreprob31ccb669b54662\\\\u0000fixturevalue\\\\u0000host:research.example.invalid\\\",\\\"parentId\\\":null,\\\"createdAt\\\":1793616605397,\\\"profileId\\\":\\\"default\\\",\\\"tier\\\":\\\"profile\\\",\\\"ownerSessionId\\\":null,\\\"ownerAgentId\\\":\\\"research-client-a\\\",\\\"provenance\\\":[{\\\"sourceUrl\\\":\\\"https://research.example.invalid/bmreprob31ccb669b54662\\\",\\\"domElementRef\\\":null,\\\"pageTitle\\\":null,\\\"screenshotHash\\\":null,\\\"extractedAt\\\":1793616605397,\\\"extractionSessionId\\\":null,\\\"agentId\\\":\\\"research-client-a\\\"}]},\\\"score\\\":0.5108256237659907}]\"}]},\"decoded\":[{\"nugget\":{\"id\":\"5c66cc1b00610428\",\"kind\":\"SemanticFact\",\"fact\":{\"subject\":\"bmreprob31ccb669b54662\",\"predicate\":\"fixturevalue\",\"object\":\"cobalt9052\"},\"canonicalText\":\"bmreprob31ccb669b54662 fixturevalue cobalt9052\",\"validity\":{\"start\":1793616605397,\"end\":1794221405397,\"scope\":\"host:research.example.invalid\",\"sourceType\":\"unknown\",\"location\":\"research.example.invalid\"},\"epistemic\":{\"status\":\"Active\",\"rank\":\"Normal\",\"confidence\":0.9},\"nuggetKey\":\"bmreprob31ccb669b54662\\u0000fixturevalue\\u0000host:research.example.invalid\",\"parentId\":null,\"createdAt\":1793616605397,\"profileId\":\"default\",\"tier\":\"profile\",\"ownerSessionId\":null,\"ownerAgentId\":\"research-client-a\",\"provenance\":[{\"sourceUrl\":\"https://research.example.invalid/bmreprob31ccb669b54662\",\"domElementRef\":null,\"pageTitle\":null,\"screenshotHash\":null,\"extractedAt\":1793616605397,\"extractionSessionId\":null,\"agentId\":\"research-client-a\"}]},\"score\":0.5108256237659907}],\"pass\":true}],\"pass\":true}\n",
+    "stderr": "",
+    "data": {
+      "role": "reader",
+      "pid": 62849,
+      "outcomes": [
+        {
+          "subject": "bmreprob31ccb669b54660",
+          "expected": "amber2714",
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "[{\"nugget\":{\"id\":\"97dce068b90bdc84\",\"kind\":\"SemanticFact\",\"fact\":{\"subject\":\"bmreprob31ccb669b54660\",\"predicate\":\"fixturevalue\",\"object\":\"amber2714\"},\"canonicalText\":\"bmreprob31ccb669b54660 fixturevalue amber2714\",\"validity\":{\"start\":1793616605389,\"end\":1794221405389,\"scope\":\"host:research.example.invalid\",\"sourceType\":\"unknown\",\"location\":\"research.example.invalid\"},\"epistemic\":{\"status\":\"Active\",\"rank\":\"Normal\",\"confidence\":0.9},\"nuggetKey\":\"bmreprob31ccb669b54660\\u0000fixturevalue\\u0000host:research.example.invalid\",\"parentId\":null,\"createdAt\":1793616605389,\"profileId\":\"default\",\"tier\":\"profile\",\"ownerSessionId\":null,\"ownerAgentId\":\"research-client-a\",\"provenance\":[{\"sourceUrl\":\"https://research.example.invalid/bmreprob31ccb669b54660\",\"domElementRef\":null,\"pageTitle\":null,\"screenshotHash\":null,\"extractedAt\":1793616605389,\"extractionSessionId\":null,\"agentId\":\"research-client-a\"}]},\"score\":0.5108256237659907}]"
+              }
+            ]
+          },
+          "decoded": [
+            {
+              "nugget": {
+                "id": "97dce068b90bdc84",
+                "kind": "SemanticFact",
+                "fact": {
+                  "subject": "bmreprob31ccb669b54660",
+                  "predicate": "fixturevalue",
+                  "object": "amber2714"
+                },
+                "canonicalText": "bmreprob31ccb669b54660 fixturevalue amber2714",
+                "validity": {
+                  "start": 1793616605389,
+                  "end": 1794221405389,
+                  "scope": "host:research.example.invalid",
+                  "sourceType": "unknown",
+                  "location": "research.example.invalid"
+                },
+                "epistemic": {
+                  "status": "Active",
+                  "rank": "Normal",
+                  "confidence": 0.9
+                },
+                "nuggetKey": "bmreprob31ccb669b54660\u0000fixturevalue\u0000host:research.example.invalid",
+                "parentId": null,
+                "createdAt": 1793616605389,
+                "profileId": "default",
+                "tier": "profile",
+                "ownerSessionId": null,
+                "ownerAgentId": "research-client-a",
+                "provenance": [
+                  {
+                    "sourceUrl": "https://research.example.invalid/bmreprob31ccb669b54660",
+                    "domElementRef": null,
+                    "pageTitle": null,
+                    "screenshotHash": null,
+                    "extractedAt": 1793616605389,
+                    "extractionSessionId": null,
+                    "agentId": "research-client-a"
+                  }
+                ]
+              },
+              "score": 0.5108256237659907
+            }
+          ],
+          "pass": true
+        },
+        {
+          "subject": "bmreprob31ccb669b54661",
+          "expected": "violet6381",
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "[{\"nugget\":{\"id\":\"80f03a3700d9b8c3\",\"kind\":\"SemanticFact\",\"fact\":{\"subject\":\"bmreprob31ccb669b54661\",\"predicate\":\"fixturevalue\",\"object\":\"violet6381\"},\"canonicalText\":\"bmreprob31ccb669b54661 fixturevalue violet6381\",\"validity\":{\"start\":1793616605395,\"end\":1794221405395,\"scope\":\"host:research.example.invalid\",\"sourceType\":\"unknown\",\"location\":\"research.example.invalid\"},\"epistemic\":{\"status\":\"Active\",\"rank\":\"Normal\",\"confidence\":0.9},\"nuggetKey\":\"bmreprob31ccb669b54661\\u0000fixturevalue\\u0000host:research.example.invalid\",\"parentId\":null,\"createdAt\":1793616605395,\"profileId\":\"default\",\"tier\":\"profile\",\"ownerSessionId\":null,\"ownerAgentId\":\"research-client-a\",\"provenance\":[{\"sourceUrl\":\"https://research.example.invalid/bmreprob31ccb669b54661\",\"domElementRef\":null,\"pageTitle\":null,\"screenshotHash\":null,\"extractedAt\":1793616605395,\"extractionSessionId\":null,\"agentId\":\"research-client-a\"}]},\"score\":0.5108256237659907}]"
+              }
+            ]
+          },
+          "decoded": [
+            {
+              "nugget": {
+                "id": "80f03a3700d9b8c3",
+                "kind": "SemanticFact",
+                "fact": {
+                  "subject": "bmreprob31ccb669b54661",
+                  "predicate": "fixturevalue",
+                  "object": "violet6381"
+                },
+                "canonicalText": "bmreprob31ccb669b54661 fixturevalue violet6381",
+                "validity": {
+                  "start": 1793616605395,
+                  "end": 1794221405395,
+                  "scope": "host:research.example.invalid",
+                  "sourceType": "unknown",
+                  "location": "research.example.invalid"
+                },
+                "epistemic": {
+                  "status": "Active",
+                  "rank": "Normal",
+                  "confidence": 0.9
+                },
+                "nuggetKey": "bmreprob31ccb669b54661\u0000fixturevalue\u0000host:research.example.invalid",
+                "parentId": null,
+                "createdAt": 1793616605395,
+                "profileId": "default",
+                "tier": "profile",
+                "ownerSessionId": null,
+                "ownerAgentId": "research-client-a",
+                "provenance": [
+                  {
+                    "sourceUrl": "https://research.example.invalid/bmreprob31ccb669b54661",
+                    "domElementRef": null,
+                    "pageTitle": null,
+                    "screenshotHash": null,
+                    "extractedAt": 1793616605395,
+                    "extractionSessionId": null,
+                    "agentId": "research-client-a"
+                  }
+                ]
+              },
+              "score": 0.5108256237659907
+            }
+          ],
+          "pass": true
+        },
+        {
+          "subject": "bmreprob31ccb669b54662",
+          "expected": "cobalt9052",
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "[{\"nugget\":{\"id\":\"5c66cc1b00610428\",\"kind\":\"SemanticFact\",\"fact\":{\"subject\":\"bmreprob31ccb669b54662\",\"predicate\":\"fixturevalue\",\"object\":\"cobalt9052\"},\"canonicalText\":\"bmreprob31ccb669b54662 fixturevalue cobalt9052\",\"validity\":{\"start\":1793616605397,\"end\":1794221405397,\"scope\":\"host:research.example.invalid\",\"sourceType\":\"unknown\",\"location\":\"research.example.invalid\"},\"epistemic\":{\"status\":\"Active\",\"rank\":\"Normal\",\"confidence\":0.9},\"nuggetKey\":\"bmreprob31ccb669b54662\\u0000fixturevalue\\u0000host:research.example.invalid\",\"parentId\":null,\"createdAt\":1793616605397,\"profileId\":\"default\",\"tier\":\"profile\",\"ownerSessionId\":null,\"ownerAgentId\":\"research-client-a\",\"provenance\":[{\"sourceUrl\":\"https://research.example.invalid/bmreprob31ccb669b54662\",\"domElementRef\":null,\"pageTitle\":null,\"screenshotHash\":null,\"extractedAt\":1793616605397,\"extractionSessionId\":null,\"agentId\":\"research-client-a\"}]},\"score\":0.5108256237659907}]"
+              }
+            ]
+          },
+          "decoded": [
+            {
+              "nugget": {
+                "id": "5c66cc1b00610428",
+                "kind": "SemanticFact",
+                "fact": {
+                  "subject": "bmreprob31ccb669b54662",
+                  "predicate": "fixturevalue",
+                  "object": "cobalt9052"
+                },
+                "canonicalText": "bmreprob31ccb669b54662 fixturevalue cobalt9052",
+                "validity": {
+                  "start": 1793616605397,
+                  "end": 1794221405397,
+                  "scope": "host:research.example.invalid",
+                  "sourceType": "unknown",
+                  "location": "research.example.invalid"
+                },
+                "epistemic": {
+                  "status": "Active",
+                  "rank": "Normal",
+                  "confidence": 0.9
+                },
+                "nuggetKey": "bmreprob31ccb669b54662\u0000fixturevalue\u0000host:research.example.invalid",
+                "parentId": null,
+                "createdAt": 1793616605397,
+                "profileId": "default",
+                "tier": "profile",
+                "ownerSessionId": null,
+                "ownerAgentId": "research-client-a",
+                "provenance": [
+                  {
+                    "sourceUrl": "https://research.example.invalid/bmreprob31ccb669b54662",
+                    "domElementRef": null,
+                    "pageTitle": null,
+                    "screenshotHash": null,
+                    "extractedAt": 1793616605397,
+                    "extractionSessionId": null,
+                    "agentId": "research-client-a"
+                  }
+                ]
+              },
+              "score": 0.5108256237659907
+            }
+          ],
+          "pass": true
+        }
+      ],
+      "pass": true
+    }
+  },
+  "pass": true,
+  "playwrightVersion": "1.60.0",
+  "executable": "/Users/dndesign/Library/Caches/ms-playwright/chromium-1223/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing",
+  "browserVersion": "148.0.7778.96",
+  "loadedServiceWorkerUrls": [
+    "chrome-extension://gcgjjaccohekecljjhifonakpkjjhckn/dist/service-worker.js"
+  ],
+  "relayStatus": {
+    "extensionConnected": true,
+    "clients": 1
+  },
+  "extensionConnectedAt": "2026-11-02T10:50:05.117Z",
+  "finished": "2026-11-02T10:50:09.709Z"
+}
