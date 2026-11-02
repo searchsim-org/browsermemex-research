@@ -82,6 +82,12 @@ The date audit found 44 questions with labeled evidence dated after the question
 
 The signature module `secure-envelope.mjs` is new companion code, not a claim that the inspected extension's legacy checksum format was cryptographically secure. Callers must supply an independently trusted public key. Semantic correctness and action authorization are separate concerns.
 
-The compact artifact can be regenerated from the project root with `make package` or `python3 scripts/package.py`. It excludes `node_modules`, external benchmark raw data, caches, and build intermediates. No credentials or model configuration files are required. Publishing that prepared archive to a persistent reviewer-accessible location is a separate release step; local preparation does not establish public availability.
+The compact artifact can be regenerated from the project root with `make package` or `python3 scripts/package.py`. It excludes `node_modules`, external benchmark raw data, caches, and build intermediates. No credentials or model configuration files are required. The exact evaluated companion is published at https://github.com/searchsim-org/browsermemex-research. Fresh Ubuntu reproduction passed at commit19e0d56558c056c3d586496b46697894f3625782; record the pinned release and SHA when reproducing.
 
 The research companion ZIP now preserves the project root, including `evaluation/`, `cikm26/`, manuscript modules and dependencies. Plot generation writes figures into the parent paper's `figures/` directory; derived tables remain in `evaluation/results/`. The source ZIP already contains all figure/table inputs needed to compile the delivered paper independently.
+
+## Executed repair and robustness extensions
+
+`node scripts/episode-repair.mjs` executes immutable-episode policies on the original inputs and the separately versioned20-world temporal/provenance stress collection. `python3 scripts/independent-backend.py` uses the pinned requirements in `requirements-independent-backend.txt`; `node scripts/repeated-scale.mjs` runs the40process-isolated insertion/update cases. Protocols and result reports distinguish known origin labels from inferred independence, lexical backend parity from full graph-memory evaluation, and repeated10k measurements from the earlier single100k run.
+
+The connector's installed-write failures, static-import patch and separate candidate regressions are in `connector-fix/` and `../docs/CONNECTOR-FIX-RESULTS.md`. Do not relabel offline worker or isolated-candidate results as a successful reload of the user's installed extension.

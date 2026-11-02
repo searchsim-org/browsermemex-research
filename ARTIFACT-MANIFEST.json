@@ -48,6 +48,15 @@
       "compression": null
     },
     {
+      "path": "evaluation/DENSE-RETRIEVAL-PROTOCOL.md",
+      "bytes": 6425,
+      "sha256": "638e7e12d1beaac2fa9f142e009e4cb1e1bce0bf0b854a6ca4c04648a3e15899",
+      "storedPath": "evaluation/DENSE-RETRIEVAL-PROTOCOL.md",
+      "storedBytes": 6425,
+      "storedSha256": "638e7e12d1beaac2fa9f142e009e4cb1e1bce0bf0b854a6ca4c04648a3e15899",
+      "compression": null
+    },
+    {
       "path": "evaluation/EPISODE-REPAIR-PROTOCOL.md",
       "bytes": 5576,
       "sha256": "73fd7b88d9c2d14035f40da5442785d7774734c4f251d033e7bd1cc6ecb4eecc",
@@ -112,11 +121,11 @@
     },
     {
       "path": "evaluation/README.md",
-      "bytes": 8415,
-      "sha256": "0352a84063b6d47bf2cc4e7a8a719a75a441493c20738372907872ddc4b5fe97",
+      "bytes": 9392,
+      "sha256": "fd3ae09f8956fb4c6cb4c799545da0eb681a0e92657ba6fbf655f9989af0497c",
       "storedPath": "evaluation/README.md",
-      "storedBytes": 8415,
-      "storedSha256": "0352a84063b6d47bf2cc4e7a8a719a75a441493c20738372907872ddc4b5fe97",
+      "storedBytes": 9392,
+      "storedSha256": "fd3ae09f8956fb4c6cb4c799545da0eb681a0e92657ba6fbf655f9989af0497c",
       "compression": null
     },
     {
@@ -216,6 +225,60 @@
       "storedPath": "evaluation/browser/worker.mjs",
       "storedBytes": 3070,
       "storedSha256": "736c3b656adf9cdc5c6cafa2f78d34d614bf686d75e6716cbb637559e9074b48",
+      "compression": null
+    },
+    {
+      "path": "evaluation/connector-fix/browser-regression/fixture.json",
+      "bytes": 305,
+      "sha256": "e9b9cbeebae7f835c64c35b36eb9d5ae8b5f5793f25be00e0c4f987d97c6fb50",
+      "storedPath": "evaluation/connector-fix/browser-regression/fixture.json",
+      "storedBytes": 305,
+      "storedSha256": "e9b9cbeebae7f835c64c35b36eb9d5ae8b5f5793f25be00e0c4f987d97c6fb50",
+      "compression": null
+    },
+    {
+      "path": "evaluation/connector-fix/browser-regression/results.json",
+      "bytes": 3128,
+      "sha256": "b26ae40c69dfa5005487f5560b07b70f4122ffa82a460096d32487b6c7001cf6",
+      "storedPath": "evaluation/connector-fix/browser-regression/results.json",
+      "storedBytes": 3128,
+      "storedSha256": "b26ae40c69dfa5005487f5560b07b70f4122ffa82a460096d32487b6c7001cf6",
+      "compression": null
+    },
+    {
+      "path": "evaluation/connector-fix/browser-regression/run.mjs",
+      "bytes": 4823,
+      "sha256": "3efe9d634b6d4f279215765c00040b245945df3c2987a3d810d3d466a25b5991",
+      "storedPath": "evaluation/connector-fix/browser-regression/run.mjs",
+      "storedBytes": 4823,
+      "storedSha256": "3efe9d634b6d4f279215765c00040b245945df3c2987a3d810d3d466a25b5991",
+      "compression": null
+    },
+    {
+      "path": "evaluation/connector-fix/browser-regression/sdk-client.mjs",
+      "bytes": 1675,
+      "sha256": "abc5988c2239a91ce5fb38f2ece17f6e2207f8af7f81806021827b2055a2092f",
+      "storedPath": "evaluation/connector-fix/browser-regression/sdk-client.mjs",
+      "storedBytes": 1675,
+      "storedSha256": "abc5988c2239a91ce5fb38f2ece17f6e2207f8af7f81806021827b2055a2092f",
+      "compression": null
+    },
+    {
+      "path": "evaluation/connector-fix/browser-regression/test-native-messaging-disabled.patch",
+      "bytes": 2413,
+      "sha256": "8a5957f0f6782be6ff626a2df5e1dc5477b74f658538c504d4c8ba3cedb3f55e",
+      "storedPath": "evaluation/connector-fix/browser-regression/test-native-messaging-disabled.patch",
+      "storedBytes": 2413,
+      "storedSha256": "8a5957f0f6782be6ff626a2df5e1dc5477b74f658538c504d4c8ba3cedb3f55e",
+      "compression": null
+    },
+    {
+      "path": "evaluation/connector-fix/browser-regression/test-relay-port.patch",
+      "bytes": 494,
+      "sha256": "e0049cddcc98653e8da99f2f7a9454827583771cfd46a3fd6fc0ee28d704b591",
+      "storedPath": "evaluation/connector-fix/browser-regression/test-relay-port.patch",
+      "storedBytes": 494,
+      "storedSha256": "e0049cddcc98653e8da99f2f7a9454827583771cfd46a3fd6fc0ee28d704b591",
       "compression": null
     },
     {
@@ -669,6 +732,15 @@
       "compression": null
     },
     {
+      "path": "evaluation/requirements-dense.txt",
+      "bytes": 108,
+      "sha256": "bd0575ae1df9c191aa9eff2b9525c76c28609342579d36434061e3c072c44661",
+      "storedPath": "evaluation/requirements-dense.txt",
+      "storedBytes": 108,
+      "storedSha256": "bd0575ae1df9c191aa9eff2b9525c76c28609342579d36434061e3c072c44661",
+      "compression": null
+    },
+    {
       "path": "evaluation/requirements-independent-backend.txt",
       "bytes": 98,
       "sha256": "dd58bae489cb2674bf899a60de664076554bb047e2de408196c7adfe63dc72b9",
@@ -793,6 +865,106 @@
       "storedBytes": 2189,
       "storedSha256": "bbddaccf4521fa1c68c9bce38edb46567e2b8394bba21ccb036d424c1d896143",
       "compression": null
+    },
+    {
+      "path": "evaluation/results/dense-retrieval-cache.json",
+      "bytes": 202,
+      "sha256": "3e25efe29ba71be015183184cff5cbf65fd13d7dc60a946f41ad01979e3bfb71",
+      "storedPath": "evaluation/results/dense-retrieval-cache.json",
+      "storedBytes": 202,
+      "storedSha256": "3e25efe29ba71be015183184cff5cbf65fd13d7dc60a946f41ad01979e3bfb71",
+      "compression": null
+    },
+    {
+      "path": "evaluation/results/dense-retrieval-check.json",
+      "bytes": 876,
+      "sha256": "f1a640dd1a37127a4eff188242e3d27ed61c4d7c714a983f972746eb5f7789f1",
+      "storedPath": "evaluation/results/dense-retrieval-check.json",
+      "storedBytes": 876,
+      "storedSha256": "f1a640dd1a37127a4eff188242e3d27ed61c4d7c714a983f972746eb5f7789f1",
+      "compression": null
+    },
+    {
+      "path": "evaluation/results/dense-retrieval-embeddings.npy",
+      "bytes": 29128832,
+      "sha256": "995db1e30eb3d5d5982eca5c8dbdbb625d778ae94cf8bb701ead81fea4f88079",
+      "storedPath": "evaluation/results/dense-retrieval-embeddings.npy.gz",
+      "storedBytes": 27008113,
+      "storedSha256": "ebffba794285706b9797bb6dd066e483028fc01001e747fe50968d2ba5329063",
+      "compression": "gzip",
+      "storedParts": [
+        {
+          "path": "evaluation/results/dense-retrieval-embeddings.npy.gz.part0000",
+          "bytes": 4194304,
+          "sha256": "78ee61948ee52110304254ff24e4a10f9d7a59b7ea8ff859257c86d4748d73e1"
+        },
+        {
+          "path": "evaluation/results/dense-retrieval-embeddings.npy.gz.part0001",
+          "bytes": 4194304,
+          "sha256": "c9f2110b95269dcf9fe345243c6c5be25a3f1acb7d3e1a27f462f82f0ca66c2c"
+        },
+        {
+          "path": "evaluation/results/dense-retrieval-embeddings.npy.gz.part0002",
+          "bytes": 4194304,
+          "sha256": "c511633ec2af7f5373d106f7fb532a5400d67b388cb1c72b324749b20fed7269"
+        },
+        {
+          "path": "evaluation/results/dense-retrieval-embeddings.npy.gz.part0003",
+          "bytes": 4194304,
+          "sha256": "f1255781c80a4dba863fd356bca7b39b1f8759dd29b4139c46efcc5b60d2daad"
+        },
+        {
+          "path": "evaluation/results/dense-retrieval-embeddings.npy.gz.part0004",
+          "bytes": 4194304,
+          "sha256": "5b74c33b7c2068f84b1f3d9106de217df6b932f81c9ea0fed59ebc2a1edf5b13"
+        },
+        {
+          "path": "evaluation/results/dense-retrieval-embeddings.npy.gz.part0005",
+          "bytes": 4194304,
+          "sha256": "f5f013c4aafdc384e901fc24597cdb08b774eec4dd41c23f4883154c36970bd9"
+        },
+        {
+          "path": "evaluation/results/dense-retrieval-embeddings.npy.gz.part0006",
+          "bytes": 1842289,
+          "sha256": "3320a416e8ec5ca824a2128012cd74fffc5c9a6e7644c2250514395b256fd11e"
+        }
+      ]
+    },
+    {
+      "path": "evaluation/results/dense-retrieval-environment.json",
+      "bytes": 3197,
+      "sha256": "8b1bb496179f73300a56d4774dcac8d6f4824c48acc65205b0bc09b4657d697c",
+      "storedPath": "evaluation/results/dense-retrieval-environment.json",
+      "storedBytes": 3197,
+      "storedSha256": "8b1bb496179f73300a56d4774dcac8d6f4824c48acc65205b0bc09b4657d697c",
+      "compression": null
+    },
+    {
+      "path": "evaluation/results/dense-retrieval-outcomes.json",
+      "bytes": 891902,
+      "sha256": "91144b8734871cd1774267f940ae4f191337d140c90b6bee593910db1b2b38e2",
+      "storedPath": "evaluation/results/dense-retrieval-outcomes.json.gz",
+      "storedBytes": 186708,
+      "storedSha256": "438c713788ffced0b0e8b021380f6943d8268f22c7dfd6fd186b70e031500daf",
+      "compression": "gzip"
+    },
+    {
+      "path": "evaluation/results/dense-retrieval-summary.json",
+      "bytes": 7279,
+      "sha256": "1fd1909aad85bb588a22198c2938026af669c3ba5f69755b40bf4bfd204e91cc",
+      "storedPath": "evaluation/results/dense-retrieval-summary.json",
+      "storedBytes": 7279,
+      "storedSha256": "1fd1909aad85bb588a22198c2938026af669c3ba5f69755b40bf4bfd204e91cc",
+      "compression": null
+    },
+    {
+      "path": "evaluation/results/dense-retrieval-text-manifest.json",
+      "bytes": 9626853,
+      "sha256": "0c8341500bd95774b9f17fd1dbc13da1985778abe134ef576a4554e22f07db0e",
+      "storedPath": "evaluation/results/dense-retrieval-text-manifest.json.gz",
+      "storedBytes": 2057142,
+      "storedSha256": "0fbf15e44efed0c292e5d95aa234173cc2bf768b588bde82cbfabcecd2373f9b",
+      "compression": "gzip"
     },
     {
       "path": "evaluation/results/environment.json",
@@ -1201,11 +1373,20 @@
     },
     {
       "path": "evaluation/scripts/cross-client-server.mjs",
-      "bytes": 2371,
-      "sha256": "ec52efe3b50c06097d056cf167c792ff38936a87d1c7f2f0b5887cc371254804",
+      "bytes": 2547,
+      "sha256": "be0abef332b66c2abb8fbbaaf332223adffb27959506f2ebb351b0ca86d24623",
       "storedPath": "evaluation/scripts/cross-client-server.mjs",
-      "storedBytes": 2371,
-      "storedSha256": "ec52efe3b50c06097d056cf167c792ff38936a87d1c7f2f0b5887cc371254804",
+      "storedBytes": 2547,
+      "storedSha256": "be0abef332b66c2abb8fbbaaf332223adffb27959506f2ebb351b0ca86d24623",
+      "compression": null
+    },
+    {
+      "path": "evaluation/scripts/dense-retrieval.py",
+      "bytes": 14188,
+      "sha256": "2a65d3281b99d0f98f0141b4871444d13eaf60d274fc5125370dc48c58f9b81d",
+      "storedPath": "evaluation/scripts/dense-retrieval.py",
+      "storedBytes": 14188,
+      "storedSha256": "2a65d3281b99d0f98f0141b4871444d13eaf60d274fc5125370dc48c58f9b81d",
       "compression": null
     },
     {
@@ -2331,6 +2512,15 @@
       "storedPath": "docs/CONNECTOR-FIX-RESULTS.md",
       "storedBytes": 6643,
       "storedSha256": "ba53d5141e2f1f9c6465fd8e510087d4f55f501fbb869f92167bd23d80f95e9e",
+      "compression": null
+    },
+    {
+      "path": "docs/DENSE-RETRIEVAL-RESULTS.md",
+      "bytes": 8299,
+      "sha256": "dbb9631faec773cdd32b1478960b36ed20da451b9b0406acc0acd6ef2c060322",
+      "storedPath": "docs/DENSE-RETRIEVAL-RESULTS.md",
+      "storedBytes": 8299,
+      "storedSha256": "dbb9631faec773cdd32b1478960b36ed20da451b9b0406acc0acd6ef2c060322",
       "compression": null
     }
   ]

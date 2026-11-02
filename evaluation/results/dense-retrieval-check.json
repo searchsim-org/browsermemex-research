@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "questions": 500,
+  "eligible": 470,
+  "distinctCandidates": 23854,
+  "uniqueEncoderInputs": 18964,
+  "checks": [
+    "Every candidate-ID pool equals the existing actual-core provided-history pool",
+    "All text/window hashes reconstructed from original role/content strings",
+    "Every500dense rankings recomputed from cached normalized actual-model vectors",
+    "Every500matched-prefixFTS5rankings independently rebuilt from original text windows",
+    "All recalled-ID metrics and all2,000-sample paired bootstrap intervals independently recomputed",
+    "All source/protocol/vector identities verified"
+  ],
+  "sourceSha256": "2a65d3281b99d0f98f0141b4871444d13eaf60d274fc5125370dc48c58f9b81d",
+  "independentModelForwardSpotCheck": {
+    "vectors": 5,
+    "maxAbsoluteDifference": 0.0,
+    "threshold": 1e-05,
+    "realModelExecution": true
+  }
+}

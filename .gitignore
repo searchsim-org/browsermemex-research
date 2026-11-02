@@ -49,6 +49,9 @@ evaluation/data/external/
 /evaluation/data/ttl-noise0.2-seed27005.json
 /evaluation/results/browser-results.json
 /evaluation/results/coverage-matched.json
+/evaluation/results/dense-retrieval-embeddings.npy
+/evaluation/results/dense-retrieval-outcomes.json
+/evaluation/results/dense-retrieval-text-manifest.json
 /evaluation/results/episode-repair-original.json
 /evaluation/results/episode-repair-stress-inputs.json
 /evaluation/results/episode-repair-stress.json

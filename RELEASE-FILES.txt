@@ -1,3 +1,4 @@
+.github/workflows/dense.yml
 .github/workflows/reproduce.yml
 .gitignore
 ARTIFACT-MANIFEST.json
@@ -7,6 +8,7 @@ README.md
 cikm26/experiments/results/rq1-cross-agent-hard.json
 cikm26/experiments/results/rq2-routing-real-llm.json
 docs/CONNECTOR-FIX-RESULTS.md
+docs/DENSE-RETRIEVAL-RESULTS.md
 docs/EPISODE-REPAIR-RESULTS.md
 docs/INDEPENDENT-BACKEND-RESULTS.md
 docs/MECHANISM-RESULTS.md
@@ -17,6 +19,7 @@ evaluation/COVERAGE-PROTOCOL.md
 evaluation/CROSS-CLIENT-PROTOCOL.md
 evaluation/DATA-LICENSE.txt
 evaluation/DATASET-CARD.md
+evaluation/DENSE-RETRIEVAL-PROTOCOL.md
 evaluation/EPISODE-REPAIR-PROTOCOL.md
 evaluation/EXTERNAL-PROTOCOL.md
 evaluation/INDEPENDENT-BACKEND-PROTOCOL.md
@@ -36,6 +39,12 @@ evaluation/browser/sqlite/index.mjs.gz
 evaluation/browser/sqlite/sqlite3-opfs-async-proxy.js
 evaluation/browser/sqlite/sqlite3.wasm.gz
 evaluation/browser/worker.mjs
+evaluation/connector-fix/browser-regression/fixture.json
+evaluation/connector-fix/browser-regression/results.json
+evaluation/connector-fix/browser-regression/run.mjs
+evaluation/connector-fix/browser-regression/sdk-client.mjs
+evaluation/connector-fix/browser-regression/test-native-messaging-disabled.patch
+evaluation/connector-fix/browser-regression/test-relay-port.patch
 evaluation/connector-fix/candidate-source-files.sha256
 evaluation/connector-fix/mcp-bridge.fixed.js
 evaluation/connector-fix/offline-regression-results.json
@@ -86,6 +95,7 @@ evaluation/episode-policy.mjs
 evaluation/lookup-index.mjs
 evaluation/package-lock.json
 evaluation/package.json
+evaluation/requirements-dense.txt
 evaluation/requirements-independent-backend.txt
 evaluation/results/aggregate-statistics.json
 evaluation/results/archive-audit.json
@@ -100,6 +110,19 @@ evaluation/results/cross-client-codex-writer.jsonl
 evaluation/results/cross-client-codex-writer.txt
 evaluation/results/cross-client-fixture.json
 evaluation/results/cross-client-sdk-results.json
+evaluation/results/dense-retrieval-cache.json
+evaluation/results/dense-retrieval-check.json
+evaluation/results/dense-retrieval-embeddings.npy.gz.part0000
+evaluation/results/dense-retrieval-embeddings.npy.gz.part0001
+evaluation/results/dense-retrieval-embeddings.npy.gz.part0002
+evaluation/results/dense-retrieval-embeddings.npy.gz.part0003
+evaluation/results/dense-retrieval-embeddings.npy.gz.part0004
+evaluation/results/dense-retrieval-embeddings.npy.gz.part0005
+evaluation/results/dense-retrieval-embeddings.npy.gz.part0006
+evaluation/results/dense-retrieval-environment.json
+evaluation/results/dense-retrieval-outcomes.json.gz
+evaluation/results/dense-retrieval-summary.json
+evaluation/results/dense-retrieval-text-manifest.json.gz
 evaluation/results/environment.json
 evaluation/results/episode-repair-manifest.json
 evaluation/results/episode-repair-original.json.gz
@@ -146,6 +169,7 @@ evaluation/scripts/browser-parity.mjs
 evaluation/scripts/contracts.mjs
 evaluation/scripts/coverage-matched.py
 evaluation/scripts/cross-client-server.mjs
+evaluation/scripts/dense-retrieval.py
 evaluation/scripts/episode-repair.mjs
 evaluation/scripts/evaluate.mjs
 evaluation/scripts/independent-backend.py
@@ -263,6 +287,8 @@ evaluation/vendor/core/test/skills.test.mjs
 evaluation/vendor/core/test/tab-context.test.mjs
 evaluation/vendor/core/test/validity.test.mjs
 evaluation/vendor/core/test/workflows.test.mjs
+scripts/__pycache__/unpack.cpython-314.pyc
+scripts/check_dense.py
 scripts/fingerprints.py
 scripts/reproduce.sh
 scripts/unpack.py

@@ -1,0 +1,118 @@
+{
+  "started": "2026-11-02T05:52:32.740Z",
+  "scope": "fresh-profile headless Chromium candidate test through actual MCP bridge; not user-installed Chrome or autonomous runtimes",
+  "relayPort": 7863,
+  "profileFresh": true,
+  "profileWasPreexisting": false,
+  "extensionManifest": {
+    "manifest_version": 3,
+    "name": "BrowserMemex",
+    "version": "1.0.0",
+    "description": "Connect AI coding agents, manage memory and skills, schedule recurring web tasks — all from your browser.",
+    "icons": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    },
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage",
+      "tabs",
+      "downloads",
+      "identity",
+      "alarms",
+      "bookmarks",
+      "history",
+      "notifications",
+      "sidePanel"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+    },
+    "action": {
+      "default_title": "BrowserMemex",
+      "default_popup": "src/popup/popup.html",
+      "default_icon": {
+        "16": "icons/icon-16.png",
+        "32": "icons/icon-32.png",
+        "48": "icons/icon-48.png"
+      }
+    },
+    "side_panel": {
+      "default_path": "dist/sidepanel.html"
+    },
+    "background": {
+      "service_worker": "dist/service-worker.js",
+      "type": "module"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "icons/*.png"
+        ],
+        "matches": [
+          "<all_urls>"
+        ]
+      }
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": [
+          "src/content/accessibility-tree.js"
+        ],
+        "run_at": "document_start",
+        "all_frames": true
+      },
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": [
+          "src/content/content.js",
+          "src/content/agent-visual-indicator.js",
+          "src/content/dom-tagging.js",
+          "src/content/selection-toolbar.js"
+        ],
+        "run_at": "document_end",
+        "all_frames": false
+      }
+    ]
+  },
+  "candidateSourceSha256": "776c864e8a6d8d0529b9587d01392759b9c736dde47c0c9f6bc1de88ba714d59",
+  "builtWorkerSha256": "988601e0d6e001307d35c39003a21df34ca8ecdcd74f34786ddbcff1b9f08a8b",
+  "testManifestSha256": "35e37b95aea27a0d5492037a3b3031381dfdc8b2f03bb9ef8712e838a2c6c2eb",
+  "changesFromCandidate": [
+    "default relay port 7862 -> 7863",
+    "test manifest omits nativeMessaging permission to prevent host inbox access"
+  ],
+  "fixture": {
+    "run": "bmreprod43158b02965de",
+    "facts": [
+      {
+        "subject": "bmreprod43158b02965de0",
+        "value": "amber2714"
+      },
+      {
+        "subject": "bmreprod43158b02965de1",
+        "value": "violet6381"
+      },
+      {
+        "subject": "bmreprod43158b02965de2",
+        "value": "cobalt9052"
+      }
+    ]
+  },
+  "writer": null,
+  "reader": null,
+  "pass": false,
+  "error": "TypeError: fetch failed",
+  "finished": "2026-11-02T05:52:33.275Z"
+}

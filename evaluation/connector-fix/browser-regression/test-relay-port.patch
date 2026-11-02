@@ -1,0 +1,11 @@
+--- candidate/mcp-bridge.js
++++ isolated-test/mcp-bridge.js
+@@ -20,7 +20,7 @@
+ // Default relay URL. Overridable via chrome.storage.local.relayUrl — set
+ // from the Settings tab when pairing the extension with a relay that runs
+ // on a different machine (e.g., a Mac steering the tablet's browser).
+-export const DEFAULT_WS_RELAY_URL = 'ws://localhost:7862';
++export const DEFAULT_WS_RELAY_URL = 'ws://localhost:7863';
+ const WS_RECONNECT_DELAY_MS = 5000;
+ 
+ async function getRelayUrl() {

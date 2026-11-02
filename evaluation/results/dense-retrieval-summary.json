@@ -1,0 +1,217 @@
+{
+  "environment": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "license": "Apache-2.0",
+    "modelFileSha256": {
+      "model.onnx": "6fd5d72fe4589f189f8ebc006442dbb529bb7ce38f8082112682524616046452",
+      "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+      "config.json": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+      "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "tokenizer_config.json": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+      "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+      "sentence_bert_config.json": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7",
+      "1_Pooling/config.json": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23"
+    },
+    "scriptSha256": "2a65d3281b99d0f98f0141b4871444d13eaf60d274fc5125370dc48c58f9b81d",
+    "protocolSha256": "638e7e12d1beaac2fa9f142e009e4cb1e1bce0bf0b854a6ca4c04648a3e15899",
+    "datasetSha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+    "maxModelTokens": 256,
+    "contentWordpieces": 254,
+    "pooling": "Attention-mask mean over all unpadded hidden tokens, then L2 normalization",
+    "dtype": "float32",
+    "embeddingDimension": 384,
+    "batchSize": 16,
+    "intraOpThreads": 4,
+    "interOpThreads": 1,
+    "executionProvider": "CPUExecutionProvider",
+    "python": "3.9.6",
+    "platform": "macOS-15.6-arm64-arm-64bit",
+    "machine": "arm64",
+    "libraries": {
+      "onnxruntime": "1.12.1",
+      "tokenizers": "0.11.6",
+      "numpy": "1.23.3"
+    },
+    "nativeSQLite": "3.43.2",
+    "questions": 500,
+    "sessionOccurrences": 23867,
+    "distinctQuestionSessionCandidates": 23854,
+    "duplicateSessionIdOccurrences": 13,
+    "uniqueSessionTexts": 18464,
+    "uniqueEncoderInputs": 18964,
+    "sessionOccurrencesTruncated": 23283,
+    "uniqueSessionTextsTruncated": 18039,
+    "queriesTruncated": 0,
+    "totalOccurrenceFullWordpieces": 55144444,
+    "totalOccurrenceVisibleWordpieces": 5988155,
+    "downloadedBytesDuringInvocation": 0,
+    "modelArtifactBytes": 91104286,
+    "preprocessingSeconds": 77.42056375,
+    "cacheKey": "541788a39364798da8143b0451355e4658e6d37c1236b102bd77955bf1fbb330",
+    "paidApiCalls": 0,
+    "encoderInferenceCalls": 1186,
+    "embeddingCacheReused": false,
+    "peakRssBeforeEncodingBytes": 1801797632,
+    "primarySources": [
+      "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+      "https://onnxruntime.ai/docs/api/python/api_summary.html",
+      "https://huggingface.co/docs/tokenizers/api/encoding"
+    ],
+    "actualSessionProviders": [
+      "CPUExecutionProvider"
+    ],
+    "encodingSeconds": 389.35866483300003,
+    "embeddingBytes": 29128704,
+    "peakRssAfterEncodingBytes": 1801797632,
+    "eligibleQuestions": 470,
+    "abstentionQuestions": 30,
+    "lexicalIndexSeconds": 0.4903312810003513,
+    "lexicalQuerySeconds": 0.08413334199968858,
+    "denseQuerySeconds": 0.2800757520003003,
+    "retrievalSeconds": 1.0078771249999932,
+    "totalSeconds": 470.02265975,
+    "peakRssBytes": 1801797632,
+    "embeddingFileSha256": "995db1e30eb3d5d5982eca5c8dbdbb625d778ae94cf8bb701ead81fea4f88079"
+  },
+  "summary": {
+    "dense-minilm": {
+      "recall5": {
+        "mean": 0.8591489361702128,
+        "low95": 0.8314875886524823,
+        "high95": 0.8851817375886524
+      },
+      "recall10": {
+        "mean": 0.9279787234042552,
+        "low95": 0.9072331560283687,
+        "high95": 0.9461001773049644
+      },
+      "allEvidence10": {
+        "mean": 0.8829787234042553,
+        "low95": 0.8531382978723404,
+        "high95": 0.9106382978723404
+      }
+    },
+    "bm25-matched-prefix": {
+      "recall5": {
+        "mean": 0.7459219858156029,
+        "low95": 0.7112039007092198,
+        "high95": 0.7766675531914893
+      },
+      "recall10": {
+        "mean": 0.8231205673758866,
+        "low95": 0.7920203900709221,
+        "high95": 0.8524503546099291
+      },
+      "allEvidence10": {
+        "mean": 0.7382978723404255,
+        "low95": 0.6999468085106383,
+        "high95": 0.7787234042553192
+      }
+    }
+  },
+  "pairedDenseMinusMatchedBM25": {
+    "recall5": {
+      "mean": 0.11322695035460993,
+      "low95": 0.08084485815602838,
+      "high95": 0.14653014184397162
+    },
+    "recall10": {
+      "mean": 0.10485815602836879,
+      "low95": 0.07357978723404256,
+      "high95": 0.13469769503546092
+    },
+    "allEvidence10": {
+      "mean": 0.14468085106382977,
+      "low95": 0.10632978723404256,
+      "high95": 0.1829787234042553
+    }
+  },
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 27301,
+    "unit": "470non-abstention questions",
+    "interval": "Percentile95% paired question bootstrap, conditional on this fixed benchmark"
+  },
+  "byQuestionType": {
+    "knowledge-update": {
+      "questions": 72,
+      "dense-minilm": {
+        "recall5": 0.875,
+        "recall10": 0.9375,
+        "allEvidence10": 0.875
+      },
+      "bm25-matched-prefix": {
+        "recall5": 0.7569444444444444,
+        "recall10": 0.7916666666666666,
+        "allEvidence10": 0.6805555555555556
+      }
+    },
+    "multi-session": {
+      "questions": 121,
+      "dense-minilm": {
+        "recall5": 0.8573002754820938,
+        "recall10": 0.9330578512396694,
+        "allEvidence10": 0.859504132231405
+      },
+      "bm25-matched-prefix": {
+        "recall5": 0.7586776859504132,
+        "recall10": 0.8388429752066116,
+        "allEvidence10": 0.6942148760330579
+      }
+    },
+    "single-session-assistant": {
+      "questions": 56,
+      "dense-minilm": {
+        "recall5": 0.9821428571428571,
+        "recall10": 0.9821428571428571,
+        "allEvidence10": 0.9821428571428571
+      },
+      "bm25-matched-prefix": {
+        "recall5": 0.9464285714285714,
+        "recall10": 0.9642857142857143,
+        "allEvidence10": 0.9642857142857143
+      }
+    },
+    "single-session-preference": {
+      "questions": 30,
+      "dense-minilm": {
+        "recall5": 0.8333333333333334,
+        "recall10": 0.9666666666666667,
+        "allEvidence10": 0.9666666666666667
+      },
+      "bm25-matched-prefix": {
+        "recall5": 0.6333333333333333,
+        "recall10": 0.7333333333333333,
+        "allEvidence10": 0.7333333333333333
+      }
+    },
+    "single-session-user": {
+      "questions": 64,
+      "dense-minilm": {
+        "recall5": 0.8125,
+        "recall10": 0.890625,
+        "allEvidence10": 0.890625
+      },
+      "bm25-matched-prefix": {
+        "recall5": 0.546875,
+        "recall10": 0.671875,
+        "allEvidence10": 0.671875
+      }
+    },
+    "temporal-reasoning": {
+      "questions": 127,
+      "dense-minilm": {
+        "recall5": 0.8272965879265092,
+        "recall10": 0.9035433070866141,
+        "allEvidence10": 0.84251968503937
+      },
+      "bm25-matched-prefix": {
+        "recall5": 0.766010498687664,
+        "recall10": 0.8611548556430446,
+        "allEvidence10": 0.7480314960629921
+      }
+    }
+  },
+  "comparisonBoundary": "Same original text prefix per session/query and same provided candidate IDs; no full-session lexical versus truncated dense comparison"
+}

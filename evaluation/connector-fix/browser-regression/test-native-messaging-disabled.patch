@@ -1,0 +1,98 @@
+--- candidate/manifest.chrome.json
++++ isolated-test/manifest.chrome.json
+@@ -2,15 +2,13 @@
+   "manifest_version": 3,
+   "name": "BrowserMemex",
+   "version": "1.0.0",
+-  "description": "Connect AI coding agents, manage memory and skills, schedule recurring web tasks — all from your browser.",
+-
++  "description": "Connect AI coding agents, manage memory and skills, schedule recurring web tasks \u2014 all from your browser.",
+   "icons": {
+     "16": "icons/icon-16.png",
+     "32": "icons/icon-32.png",
+     "48": "icons/icon-48.png",
+     "128": "icons/icon-128.png"
+   },
+-
+   "permissions": [
+     "activeTab",
+     "scripting",
+@@ -18,20 +16,18 @@
+     "tabs",
+     "downloads",
+     "identity",
+-    "nativeMessaging",
+     "alarms",
+     "bookmarks",
+     "history",
+     "notifications",
+     "sidePanel"
+   ],
+-
+-  "host_permissions": ["<all_urls>"],
+-
++  "host_permissions": [
++    "<all_urls>"
++  ],
+   "content_security_policy": {
+     "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+   },
+-
+   "action": {
+     "default_title": "BrowserMemex",
+     "default_popup": "src/popup/popup.html",
+@@ -41,33 +37,44 @@
+       "48": "icons/icon-48.png"
+     }
+   },
+-
+   "side_panel": {
+     "default_path": "dist/sidepanel.html"
+   },
+-
+   "background": {
+     "service_worker": "dist/service-worker.js",
+     "type": "module"
+   },
+-
+   "web_accessible_resources": [
+     {
+-      "resources": ["icons/*.png"],
+-      "matches": ["<all_urls>"]
++      "resources": [
++        "icons/*.png"
++      ],
++      "matches": [
++        "<all_urls>"
++      ]
+     }
+   ],
+-
+   "content_scripts": [
+     {
+-      "matches": ["<all_urls>"],
+-      "js": ["src/content/accessibility-tree.js"],
++      "matches": [
++        "<all_urls>"
++      ],
++      "js": [
++        "src/content/accessibility-tree.js"
++      ],
+       "run_at": "document_start",
+       "all_frames": true
+     },
+     {
+-      "matches": ["<all_urls>"],
+-      "js": ["src/content/content.js", "src/content/agent-visual-indicator.js", "src/content/dom-tagging.js", "src/content/selection-toolbar.js"],
++      "matches": [
++        "<all_urls>"
++      ],
++      "js": [
++        "src/content/content.js",
++        "src/content/agent-visual-indicator.js",
++        "src/content/dom-tagging.js",
++        "src/content/selection-toolbar.js"
++      ],
+       "run_at": "document_end",
+       "all_frames": false
+     }

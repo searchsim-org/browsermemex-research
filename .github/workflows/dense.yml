@@ -1,0 +1,24 @@
+name: Fresh dense retrieval reproduction
+on:
+  workflow_dispatch:
+jobs:
+  dense:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+      - name: Restore exact evaluated payload
+        run: python3 scripts/unpack.py
+      - name: Install pinned CPU encoder dependencies
+        run: python3 -m pip install -r evaluation/requirements-dense.txt
+      - name: Obtain pinned upstream benchmark
+        run: |
+          mkdir -p evaluation/data/external
+          curl -L --fail --retry 3 https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned/resolve/main/longmemeval_s_cleaned.json -o evaluation/data/external/longmemeval_s_cleaned.json
+      - name: Execute real encoder without embedding-cache reuse
+        run: python3 evaluation/scripts/dense-retrieval.py
+      - name: Compare all question metrics with frozen evaluated results
+        run: python3 scripts/check_dense.py

@@ -1,0 +1,4 @@
+# Recorded CPU dense-retrieval environment, Python3.9.
+onnxruntime==1.12.1
+tokenizers==0.11.6
+numpy==1.23.3

@@ -3,7 +3,9 @@ import {StdioServerTransport} from '@modelcontextprotocol/sdk/server/stdio.js';
 import {CallToolRequestSchema,ListToolsRequestSchema} from '@modelcontextprotocol/sdk/types.js';
 import WebSocket from 'ws';
 import {randomUUID} from 'node:crypto';
-const socket=new WebSocket('ws://127.0.0.1:7862'),pending=new Map();
+const relayPort=Number(process.env.BMEX_RELAY_PORT??7862);
+if(!Number.isInteger(relayPort)||relayPort<1024||relayPort>65535)throw Error('Invalid research relay port');
+const socket=new WebSocket(`ws://127.0.0.1:${relayPort}`),pending=new Map();
 await new Promise((resolve,reject)=>{socket.once('open',()=>{socket.send(JSON.stringify({type:'register',role:'mcp'}));resolve();});socket.once('error',reject);});
 socket.on('message',bytes=>{let m;try{m=JSON.parse(bytes);}catch{return;}const p=pending.get(m.requestId);if(p){pending.delete(m.requestId);clearTimeout(p.timer);m.ok?p.resolve(m.result):p.reject(Error(m.error));}});
 function request(op,args){return new Promise((resolve,reject)=>{const requestId='bmrepro'+randomUUID();const timer=setTimeout(()=>{pending.delete(requestId);reject(Error('Installed extension response timed out'));},20000);pending.set(requestId,{resolve,reject,timer});socket.send(JSON.stringify({type:'memex_request',requestId,op,args}));});}
