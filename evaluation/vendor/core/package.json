@@ -1,0 +1,30 @@
+{
+  "name": "@browser-memex/core",
+  "version": "1.0.0",
+  "description": "Browser-agnostic core logic for BrowserMemex (agents, memory, scheduler, router, skills, security).",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./security": "./src/security/index.js",
+    "./browser": "./src/browser/index.js",
+    "./storage": "./src/storage/index.js",
+    "./memory": "./src/memory/index.js",
+    "./agents": "./src/agents/index.js",
+    "./scheduler": "./src/scheduler/index.js",
+    "./router": "./src/router/index.js",
+    "./skills": "./src/skills/index.js",
+    "./browser-actions": "./src/browser-actions/index.js",
+    "./workflows": "./src/workflows/index.js",
+    "./profiles": "./src/profiles/index.js",
+    "./mcp-registry": "./src/mcp-registry/index.js",
+    "./tab-context": "./src/tab-context/index.js",
+    "./i18n": "./src/i18n/index.js"
+  },
+  "scripts": {
+    "lint": "eslint src/",
+    "test": "node test/conflicts.test.mjs && node test/validity.test.mjs && node test/nugget-store.test.mjs && node test/agents.test.mjs && node test/scheduler.test.mjs && node test/router.test.mjs && node test/skills.test.mjs && node test/browser-actions.test.mjs && node test/workflows.test.mjs && node test/profiles.test.mjs && node test/mcp-registry.test.mjs && node test/tab-context.test.mjs && node test/i18n.test.mjs"
+  }
+}

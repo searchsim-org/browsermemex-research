@@ -1,0 +1,50 @@
+{
+  "scope": "offline Node worker smoke of actual dispatch/capture/core with injected synthetic services; NOT installed extension results",
+  "source": "/Users/dndesign/Downloads/browser-memex",
+  "stage": "/private/tmp/browsermemex-connector-fix-stage",
+  "baselineErrorMaskReproduced": true,
+  "productionGraph": {
+    "writeRouteDirectCapture": true,
+    "memoryDynamicChunk": false,
+    "sidepanelSources": [],
+    "otherDynamicImportsRemain": true
+  },
+  "workerResult": {
+    "workerContext": {
+      "window": "undefined",
+      "document": "undefined"
+    },
+    "writes": [
+      {
+        "outcome": "new_key",
+        "nuggetId": "eddab26a5edf6d8d",
+        "candidateStatus": "Active",
+        "appliedUpdates": []
+      },
+      {
+        "outcome": "new_key",
+        "nuggetId": "28b42747cfcf2b49",
+        "candidateStatus": "Active",
+        "appliedUpdates": []
+      },
+      {
+        "outcome": "new_key",
+        "nuggetId": "9195bab5dd376ac9",
+        "candidateStatus": "Active",
+        "appliedUpdates": []
+      }
+    ],
+    "queryHitCounts": [
+      1,
+      1,
+      1
+    ],
+    "privacyDisabledDrop": {
+      "dropped": "memory disabled for active profile"
+    },
+    "domainBlockedDrop": {
+      "dropped": "host blocked: sub.blocked.invalid"
+    },
+    "count": 3
+  }
+}

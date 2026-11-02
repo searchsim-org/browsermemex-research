@@ -1,0 +1,28 @@
+{
+  "name": "browsermemex-research-companion",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "evaluate": "node scripts/evaluate.mjs",
+    "audit": "node scripts/audit-archive.mjs",
+    "serve": "node scripts/serve.mjs",
+    "controls": "node scripts/strong-controls.mjs",
+    "orchestration": "node scripts/orchestration.mjs",
+    "ablation": "node scripts/mechanism-ablation.mjs",
+    "contracts": "node scripts/contracts.mjs",
+    "scale": "node scripts/scale.mjs",
+    "scale:indexed": "node scripts/scale.mjs --composite-index",
+    "external": "node scripts/longmemeval.mjs --provided-history",
+    "test:core": "npm test --prefix vendor/core"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.25.3",
+    "@sqlite.org/sqlite-wasm": "3.53.0-build1",
+    "ws": "8.19.0"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

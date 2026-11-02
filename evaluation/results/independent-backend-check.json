@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "outcomes": 158400,
+  "worldMethodCells": 120,
+  "outcomesPerMethod": {
+    "rank-bm25": 52800,
+    "rank-bm25-time": 52800,
+    "rank-bm25-time-recency": 52800
+  },
+  "comparison": "Same per-query scored fields as saved FTS5 controls; independent implementation is rank-bm25 BM25Okapi",
+  "fieldDifferences": {}
+}

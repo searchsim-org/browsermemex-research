@@ -1,0 +1,17 @@
+# Frozen BMTR-1 protocol
+
+Written before the first BMTR-1 evaluation run. Synthetic, controlled component evaluation; no users or autonomous external agent runtimes. No model training, LLM calls, or judge-model grading.
+
+Five seeds 27001–27005; 200 entities per seed, evenly assigned to five domain labels. Five distinct state episodes per entity, independent state-transition and observation-delay distributions. Queries at replay days 10, 20, 32; current and historical queries, plus unseen entities. Replay inserts only observations available by each knowledge time. Gold is read from a separate simulator state ledger, never by the adapters.
+
+Factors: supplied exact intervals (`oracle`, explicitly an upper-bound diagnostic) or independently chosen per-domain TTL (`ttl`); corrupted-observation probabilities 0, .05, .10, .20. Corruption draws have their own seeded RNG; each corrupted value is another legitimate domain value. Source count is assigned independently of truth and may corroborate false observations. All methods receive identical observed values, times, intervals and provenance. Query histories, test sets and thresholds are not selected after seeing results.
+
+Methods: latest observation per exact key; SQLite FTS5 BM25; FTS5 BM25 with the same supplied interval filter; actual snapshot NuggetStore Active view; actual snapshot Active+Contested view. These are mechanism controls, not substitutes for neural or graph-memory systems. Last two invoke the real implementation without modifying it. Use top-10 throughout. A common deterministic resolver selects the first retrieved record matching the target subject and predicate, otherwise abstains. It never inspects the gold value. This measures exact structured evidence resolution, not language understanding or live browser task success.
+
+Primary metrics: exact answer-or-abstention accuracy and wrong-answer rate over all queries. Secondary: answer coverage; correctness among non-abstained answers; success over answerable queries; correct abstention over unanswerable queries; gold value appearing in relevant top-10 evidence; precision among target-key evidence. Missing gold and missing predictions are null, not empty strings. A query with no returned evidence has no positive evidence recall. Historical is requested valid time; knowledge time limits available observations.
+
+Aggregate each independent generated world (seed), then give mean and Student-t 95% intervals with four degrees of freedom (t=2.776445). Intervals describe generator variation, not representativeness of real people or web environments. Report current, historical and unknown slices. Retain all raw per-query outcomes and failed runs. No claim of recall equivalence is licensed by overlapping intervals.
+
+Scale: 1k, 10k and 100k unique independent keys using real NuggetStore/SQLite WASM; 1k cold-order then warm-order queries per size; report insert rate, memory, DB bytes and query percentiles. One-machine measurements are descriptive. Persistence is evaluated separately in the browser with OPFS, after page reload; Node in-memory runs do not establish browser durability.
+
+Additional audits: strict exact-match rescoring of archived LLM answers; original code contract tests; controlled semantically incorrect success traces for skill promotion; cryptographic skill-envelope tests; profile isolation and cross-agent shared-memory read/write checks. Label newly added research interfaces separately from the pinned source snapshot. Never infer actual adoption from synthetic tests.

@@ -1,0 +1,32 @@
+{
+  "sourceUrl": "https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned/resolve/main/longmemeval_s_cleaned.json",
+  "sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "providedHistory": true,
+  "questions": 500,
+  "eligible": 470,
+  "abstention": 30,
+  "insertedSessions": 23867,
+  "elapsedMs": 12778.036083,
+  "summary": {
+    "unexpired": {
+      "recall5": 0.9147517730496456,
+      "recall10": 0.954326241134752,
+      "allEvidence10": 0.9042553191489362
+    },
+    "ttl7": {
+      "recall5": 0.5251773049645391,
+      "recall10": 0.5448581560283686,
+      "allEvidence10": 0.44468085106382976
+    },
+    "ttl30": {
+      "recall5": 0.8176241134751776,
+      "recall10": 0.8510283687943265,
+      "allEvidence10": 0.7489361702127659
+    },
+    "ttl90": {
+      "recall5": 0.8711347517730498,
+      "recall10": 0.9099290780141847,
+      "allEvidence10": 0.825531914893617
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "protocol": "CROSS-CLIENT-PROTOCOL.md",
+  "transport": "Two separate MCP SDK client/server processes through loopback research relay and installed extension",
+  "autonomousRuntimes": false,
+  "fixture": {
+    "run": "bmreproa96e09c9bb1f",
+    "fixtures": [
+      {
+        "subject": "bmreproa96e09c9bb1f0",
+        "value": "amber2714"
+      },
+      {
+        "subject": "bmreproa96e09c9bb1f1",
+        "value": "violet6381"
+      },
+      {
+        "subject": "bmreproa96e09c9bb1f2",
+        "value": "cobalt9052"
+      }
+    ]
+  },
+  "log": [
+    {
+      "role": "writer",
+      "subject": "bmreproa96e09c9bb1f0",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "window is not defined"
+          }
+        ],
+        "isError": true
+      },
+      "latencyMs": 12.465000000000032
+    },
+    {
+      "role": "writer",
+      "subject": "bmreproa96e09c9bb1f1",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "window is not defined"
+          }
+        ],
+        "isError": true
+      },
+      "latencyMs": 1.698582999999985
+    },
+    {
+      "role": "writer",
+      "subject": "bmreproa96e09c9bb1f2",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "window is not defined"
+          }
+        ],
+        "isError": true
+      },
+      "latencyMs": 1.4816250000000082
+    },
+    {
+      "role": "reader",
+      "subject": "bmreproa96e09c9bb1f0",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "[]"
+          }
+        ]
+      },
+      "latencyMs": 6.322458999999981
+    },
+    {
+      "role": "reader",
+      "subject": "bmreproa96e09c9bb1f1",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "[]"
+          }
+        ]
+      },
+      "latencyMs": 4.495750000000044
+    },
+    {
+      "role": "reader",
+      "subject": "bmreproa96e09c9bb1f2",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "[]"
+          }
+        ]
+      },
+      "latencyMs": 2.60550000000012
+    }
+  ]
+}

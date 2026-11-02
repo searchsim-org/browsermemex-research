@@ -1,0 +1,5 @@
+# Post-audit controls, defined before execution
+
+The initial five-method run is preserved. Independent audit identified that equal BM25 scores are not explicitly broken by recency. Add two exploratory controls on the SAME saved 40 datasets, with no tuning or regenerated labels: (1) BM25+intervals ordered by score, effective start descending, observation time descending, ID ascending; (2) an exact-key latest-valid store ordered by effective start, observation time and ID, retaining only intervals containing the query time. The second exploits the structured key available to the common resolver and is deliberately a strong simple control. Metadata access is identical to existing methods. These controls are not dense or temporal graph systems.
+
+Write separate raw outputs and summaries. The original 264,000 outcomes remain intact; two additional controls produce 105,600 outcomes. Aggregate on the same five world seeds. Report any reduction of apparent benefit rather than selecting a favorable comparator. This is a post-audit extension, not part of the initially frozen five-method protocol.

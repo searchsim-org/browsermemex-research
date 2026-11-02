@@ -1,0 +1,67 @@
+{
+  "format": "canonical-scientific-json-v1",
+  "omittedKeys": [
+    "elapsedMs",
+    "elapsedSeconds",
+    "finished",
+    "latencyMs",
+    "node",
+    "numpy",
+    "python",
+    "started"
+  ],
+  "files": {
+    "query-outcomes.jsonl": {
+      "sha256": "6adf437293ecc14fee9ec0b13c73d5cb9dbd6bf3590bc51d91fcea1756a2f2be",
+      "records": 264000
+    },
+    "strong-controls-outcomes.jsonl": {
+      "sha256": "261f0026931592030c1026baf2f2b70103e6af4bd4a002501ad0bad8f856bf51",
+      "records": 105600
+    },
+    "orchestration-routing-inputs.jsonl": {
+      "sha256": "2a8dfe20b46ee5101cef52a575eef5c4dc4f9624e312d7aaf457b17786b22790",
+      "records": 15000
+    },
+    "orchestration-routing-outcomes.jsonl": {
+      "sha256": "67df95ea1718522dbdd82ba7e6d1ef19d7075fbe3ccf21bffc9a7db93e384fe8",
+      "records": 45000
+    },
+    "orchestration-skill-traces.json": {
+      "sha256": "38d8b24d63eef7a41101768c037ce0df37b6cf2e5d7a52d73fffb8924c176701",
+      "records": 1
+    },
+    "orchestration-summary.json": {
+      "sha256": "7e5537481700a4ad40fa6ae487bb84ce996e01ced63fadbd3a6c96baff2c604b",
+      "records": 1
+    },
+    "episode-repair-original.json": {
+      "sha256": "611c178b23c3f9103dacda9612c067e71a22ea08aa13e0acf3d77ff97b266869",
+      "records": 1
+    },
+    "episode-repair-stress.json": {
+      "sha256": "d5cd0b62e4333331f6e429fc4e0ef8021fe4460aa7d4e52f12ef87c95aab11ed",
+      "records": 1
+    },
+    "episode-repair-stress-inputs.json": {
+      "sha256": "0d676fc9856df1c609b390f26978bbd9956dc5f37474f2822d481b96e75f3452",
+      "records": 1
+    },
+    "independent-backend-outcomes.jsonl": {
+      "sha256": "2639a6e374002092f8568ca78790bda0e20bbf94daf8531e27f14d72b096a25b",
+      "records": 158400
+    },
+    "archive-audit.json": {
+      "sha256": "2600984424aa86d7afe0ccdb1d4b6528919e1f69299ae6ba00c823c1b6191d59",
+      "records": 1
+    },
+    "contracts.json": {
+      "sha256": "bcde08e88e760dd0a0a9bceca9e2fcd5c8064c448d7722d0fd49c8209e526601",
+      "records": 1
+    },
+    "mechanism-ablation-outcomes.json": {
+      "sha256": "5a5628225d36dd41e8427d55bb47d91dca198136e57ab8cd11fa1d800eee2095",
+      "records": 1
+    }
+  }
+}

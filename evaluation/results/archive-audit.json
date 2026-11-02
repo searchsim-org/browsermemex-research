@@ -1,0 +1,446 @@
+{
+  "provenance": "Reanalysis of archived outputs; no new LLM calls. Scenarios are synthetic per archived generator.",
+  "providerModelAlias": "gemma4-31b-it",
+  "metrics": {
+    "shared": {
+      "scenarios": 30,
+      "answers": 90,
+      "strictExactCorrect": 90,
+      "emptyPredictions": 0,
+      "agentAMeanTokens": 437.46666666666664,
+      "agentBMeanTokens": 400.03333333333336,
+      "perScenario": [
+        {
+          "id": "S0",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 441,
+          "agentBTokens": 383
+        },
+        {
+          "id": "S1",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 433,
+          "agentBTokens": 436
+        },
+        {
+          "id": "S2",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 438,
+          "agentBTokens": 380
+        },
+        {
+          "id": "S3",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 445,
+          "agentBTokens": 390
+        },
+        {
+          "id": "S4",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 438,
+          "agentBTokens": 444
+        },
+        {
+          "id": "S5",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 433,
+          "agentBTokens": 371
+        },
+        {
+          "id": "S6",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 440,
+          "agentBTokens": 383
+        },
+        {
+          "id": "S7",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 436,
+          "agentBTokens": 440
+        },
+        {
+          "id": "S8",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 432,
+          "agentBTokens": 371
+        },
+        {
+          "id": "S9",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 443,
+          "agentBTokens": 387
+        },
+        {
+          "id": "S10",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 437,
+          "agentBTokens": 444
+        },
+        {
+          "id": "S11",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 432,
+          "agentBTokens": 371
+        },
+        {
+          "id": "S12",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 443,
+          "agentBTokens": 387
+        },
+        {
+          "id": "S13",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 434,
+          "agentBTokens": 436
+        },
+        {
+          "id": "S14",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 432,
+          "agentBTokens": 371
+        },
+        {
+          "id": "S15",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 444,
+          "agentBTokens": 389
+        },
+        {
+          "id": "S16",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 436,
+          "agentBTokens": 440
+        },
+        {
+          "id": "S17",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 433,
+          "agentBTokens": 371
+        },
+        {
+          "id": "S18",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 442,
+          "agentBTokens": 386
+        },
+        {
+          "id": "S19",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 436,
+          "agentBTokens": 440
+        },
+        {
+          "id": "S20",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 432,
+          "agentBTokens": 371
+        },
+        {
+          "id": "S21",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 443,
+          "agentBTokens": 386
+        },
+        {
+          "id": "S22",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 438,
+          "agentBTokens": 444
+        },
+        {
+          "id": "S23",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 434,
+          "agentBTokens": 375
+        },
+        {
+          "id": "S24",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 444,
+          "agentBTokens": 388
+        },
+        {
+          "id": "S25",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 435,
+          "agentBTokens": 440
+        },
+        {
+          "id": "S26",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 437,
+          "agentBTokens": 376
+        },
+        {
+          "id": "S27",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 443,
+          "agentBTokens": 386
+        },
+        {
+          "id": "S28",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 435,
+          "agentBTokens": 440
+        },
+        {
+          "id": "S29",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 435,
+          "agentBTokens": 375
+        }
+      ]
+    },
+    "isolated": {
+      "scenarios": 30,
+      "answers": 90,
+      "strictExactCorrect": 90,
+      "emptyPredictions": 0,
+      "agentAMeanTokens": 437.46666666666664,
+      "agentBMeanTokens": 1131.2333333333333,
+      "perScenario": [
+        {
+          "id": "S0",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 441,
+          "agentBTokens": 1169
+        },
+        {
+          "id": "S1",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 433,
+          "agentBTokens": 1102
+        },
+        {
+          "id": "S2",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 438,
+          "agentBTokens": 1124
+        },
+        {
+          "id": "S3",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 445,
+          "agentBTokens": 1176
+        },
+        {
+          "id": "S4",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 438,
+          "agentBTokens": 1110
+        },
+        {
+          "id": "S5",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 433,
+          "agentBTokens": 1112
+        },
+        {
+          "id": "S6",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 440,
+          "agentBTokens": 1169
+        },
+        {
+          "id": "S7",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 436,
+          "agentBTokens": 1106
+        },
+        {
+          "id": "S8",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 432,
+          "agentBTokens": 1112
+        },
+        {
+          "id": "S9",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 443,
+          "agentBTokens": 1173
+        },
+        {
+          "id": "S10",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 437,
+          "agentBTokens": 1110
+        },
+        {
+          "id": "S11",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 432,
+          "agentBTokens": 1112
+        },
+        {
+          "id": "S12",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 443,
+          "agentBTokens": 1173
+        },
+        {
+          "id": "S13",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 434,
+          "agentBTokens": 1102
+        },
+        {
+          "id": "S14",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 432,
+          "agentBTokens": 1112
+        },
+        {
+          "id": "S15",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 444,
+          "agentBTokens": 1175
+        },
+        {
+          "id": "S16",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 436,
+          "agentBTokens": 1106
+        },
+        {
+          "id": "S17",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 433,
+          "agentBTokens": 1112
+        },
+        {
+          "id": "S18",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 442,
+          "agentBTokens": 1172
+        },
+        {
+          "id": "S19",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 436,
+          "agentBTokens": 1106
+        },
+        {
+          "id": "S20",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 432,
+          "agentBTokens": 1112
+        },
+        {
+          "id": "S21",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 443,
+          "agentBTokens": 1172
+        },
+        {
+          "id": "S22",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 438,
+          "agentBTokens": 1110
+        },
+        {
+          "id": "S23",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 434,
+          "agentBTokens": 1116
+        },
+        {
+          "id": "S24",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 444,
+          "agentBTokens": 1174
+        },
+        {
+          "id": "S25",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 435,
+          "agentBTokens": 1106
+        },
+        {
+          "id": "S26",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 437,
+          "agentBTokens": 1120
+        },
+        {
+          "id": "S27",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 443,
+          "agentBTokens": 1172
+        },
+        {
+          "id": "S28",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 435,
+          "agentBTokens": 1106
+        },
+        {
+          "id": "S29",
+          "correct": 3,
+          "n": 3,
+          "agentATokens": 435,
+          "agentBTokens": 1116
+        }
+      ]
+    }
+  }
+}

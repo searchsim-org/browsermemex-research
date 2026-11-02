@@ -1,0 +1,34 @@
+{
+  "directory": "/private/tmp/browsermemex-artifact-check-lmkqua1e",
+  "dependency": "Copied unmodified pinned SQLite package for offline clean-directory verification",
+  "checks": [
+    {
+      "command": [
+        "node",
+        "scripts/contracts.mjs"
+      ],
+      "exitCode": 0,
+      "logTail": [
+        "  promotedWrong: 0,",
+        "  limitation: 'validator is fixture-specific; not a general semantic oracle'",
+        "}",
+        "composite index preserves held-out replay outcomes PASS { seed: 27008, comparedQueries: 330 }"
+      ]
+    },
+    {
+      "command": [
+        "npm",
+        "test",
+        "--prefix",
+        "vendor/core"
+      ],
+      "exitCode": 0,
+      "logTail": [
+        "\u2713 unknown locale still set, falls back to en",
+        "\u2713 interpolation leaves unmatched placeholders alone",
+        "",
+        "All 7 tests passed."
+      ]
+    }
+  ]
+}

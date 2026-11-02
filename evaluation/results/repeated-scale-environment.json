@@ -1,0 +1,264 @@
+{
+  "protocolSha256": "ee8fb0f9284dfa9d208c810f8a02f8d0b6032b26a2636ba98e6033f86af4cb64",
+  "scriptSha256": "1bd3b732d98a231120e048100aaff2fe96e022dad77bd85a554ce5a9ba828710",
+  "node": "v26.10.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "os": "24.6.0",
+  "cpu": "Apple M1 Pro",
+  "totalMemoryBytes": 34359738368,
+  "started": "2026-11-02T01:47:00.265Z",
+  "seeds": [
+    27201,
+    27202,
+    27203,
+    27204,
+    27205
+  ],
+  "modelCalls": 0,
+  "caseIsolation": "Fresh Node subprocess for every case; shuffled eight cases within each trial seed",
+  "finished": "2026-11-02T01:49:21.915Z",
+  "caseCount": 40,
+  "executionOrder": [
+    {
+      "seed": 27201,
+      "n": 10000,
+      "longText": true,
+      "optimized": false
+    },
+    {
+      "seed": 27201,
+      "n": 10000,
+      "longText": false,
+      "optimized": true
+    },
+    {
+      "seed": 27201,
+      "n": 1000,
+      "longText": true,
+      "optimized": false
+    },
+    {
+      "seed": 27201,
+      "n": 1000,
+      "longText": true,
+      "optimized": true
+    },
+    {
+      "seed": 27201,
+      "n": 10000,
+      "longText": false,
+      "optimized": false
+    },
+    {
+      "seed": 27201,
+      "n": 1000,
+      "longText": false,
+      "optimized": true
+    },
+    {
+      "seed": 27201,
+      "n": 10000,
+      "longText": true,
+      "optimized": true
+    },
+    {
+      "seed": 27201,
+      "n": 1000,
+      "longText": false,
+      "optimized": false
+    },
+    {
+      "seed": 27202,
+      "n": 10000,
+      "longText": false,
+      "optimized": true
+    },
+    {
+      "seed": 27202,
+      "n": 1000,
+      "longText": false,
+      "optimized": false
+    },
+    {
+      "seed": 27202,
+      "n": 10000,
+      "longText": false,
+      "optimized": false
+    },
+    {
+      "seed": 27202,
+      "n": 1000,
+      "longText": true,
+      "optimized": true
+    },
+    {
+      "seed": 27202,
+      "n": 1000,
+      "longText": true,
+      "optimized": false
+    },
+    {
+      "seed": 27202,
+      "n": 10000,
+      "longText": true,
+      "optimized": false
+    },
+    {
+      "seed": 27202,
+      "n": 10000,
+      "longText": true,
+      "optimized": true
+    },
+    {
+      "seed": 27202,
+      "n": 1000,
+      "longText": false,
+      "optimized": true
+    },
+    {
+      "seed": 27203,
+      "n": 10000,
+      "longText": false,
+      "optimized": false
+    },
+    {
+      "seed": 27203,
+      "n": 10000,
+      "longText": true,
+      "optimized": false
+    },
+    {
+      "seed": 27203,
+      "n": 1000,
+      "longText": false,
+      "optimized": true
+    },
+    {
+      "seed": 27203,
+      "n": 1000,
+      "longText": true,
+      "optimized": true
+    },
+    {
+      "seed": 27203,
+      "n": 1000,
+      "longText": true,
+      "optimized": false
+    },
+    {
+      "seed": 27203,
+      "n": 1000,
+      "longText": false,
+      "optimized": false
+    },
+    {
+      "seed": 27203,
+      "n": 10000,
+      "longText": false,
+      "optimized": true
+    },
+    {
+      "seed": 27203,
+      "n": 10000,
+      "longText": true,
+      "optimized": true
+    },
+    {
+      "seed": 27204,
+      "n": 1000,
+      "longText": true,
+      "optimized": false
+    },
+    {
+      "seed": 27204,
+      "n": 1000,
+      "longText": true,
+      "optimized": true
+    },
+    {
+      "seed": 27204,
+      "n": 10000,
+      "longText": true,
+      "optimized": false
+    },
+    {
+      "seed": 27204,
+      "n": 1000,
+      "longText": false,
+      "optimized": false
+    },
+    {
+      "seed": 27204,
+      "n": 10000,
+      "longText": false,
+      "optimized": true
+    },
+    {
+      "seed": 27204,
+      "n": 10000,
+      "longText": false,
+      "optimized": false
+    },
+    {
+      "seed": 27204,
+      "n": 10000,
+      "longText": true,
+      "optimized": true
+    },
+    {
+      "seed": 27204,
+      "n": 1000,
+      "longText": false,
+      "optimized": true
+    },
+    {
+      "seed": 27205,
+      "n": 1000,
+      "longText": true,
+      "optimized": true
+    },
+    {
+      "seed": 27205,
+      "n": 1000,
+      "longText": true,
+      "optimized": false
+    },
+    {
+      "seed": 27205,
+      "n": 10000,
+      "longText": false,
+      "optimized": false
+    },
+    {
+      "seed": 27205,
+      "n": 1000,
+      "longText": false,
+      "optimized": false
+    },
+    {
+      "seed": 27205,
+      "n": 1000,
+      "longText": false,
+      "optimized": true
+    },
+    {
+      "seed": 27205,
+      "n": 10000,
+      "longText": true,
+      "optimized": false
+    },
+    {
+      "seed": 27205,
+      "n": 10000,
+      "longText": true,
+      "optimized": true
+    },
+    {
+      "seed": 27205,
+      "n": 10000,
+      "longText": false,
+      "optimized": true
+    }
+  ]
+}

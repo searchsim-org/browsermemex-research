@@ -1,0 +1,301 @@
+{
+  "futureSessions": 1474,
+  "questionsWithFutureEvidence": 44,
+  "questions": [
+    {
+      "id": "gpt4_2655b836",
+      "excludedGold": [
+        "answer_4be1b6b4_1",
+        "answer_4be1b6b4_2"
+      ]
+    },
+    {
+      "id": "gpt4_2487a7cb",
+      "excludedGold": [
+        "answer_1c6b85ea_1"
+      ]
+    },
+    {
+      "id": "gpt4_76048e76",
+      "excludedGold": [
+        "answer_b535969f_1",
+        "answer_b535969f_2"
+      ]
+    },
+    {
+      "id": "gpt4_2312f94c",
+      "excludedGold": [
+        "answer_5328c3c2_1",
+        "answer_5328c3c2_2"
+      ]
+    },
+    {
+      "id": "0bb5a684",
+      "excludedGold": [
+        "answer_e936197f_2"
+      ]
+    },
+    {
+      "id": "gpt4_385a5000",
+      "excludedGold": [
+        "answer_7a4a93f1_1",
+        "answer_7a4a93f1_2"
+      ]
+    },
+    {
+      "id": "2a1811e2",
+      "excludedGold": [
+        "answer_1cc3cd0c_1"
+      ]
+    },
+    {
+      "id": "gpt4_5dcc0aab",
+      "excludedGold": [
+        "answer_099c1b6c_1",
+        "answer_099c1b6c_2",
+        "answer_099c1b6c_3",
+        "answer_099c1b6c_4",
+        "answer_099c1b6c_5"
+      ]
+    },
+    {
+      "id": "gpt4_0b2f1d21",
+      "excludedGold": [
+        "answer_c4e5d969_1"
+      ]
+    },
+    {
+      "id": "gpt4_6ed717ea",
+      "excludedGold": [
+        "answer_d50a8a33_1",
+        "answer_d50a8a33_2"
+      ]
+    },
+    {
+      "id": "gpt4_70e84552",
+      "excludedGold": [
+        "answer_b3070ec4_1"
+      ]
+    },
+    {
+      "id": "a3838d2b",
+      "excludedGold": [
+        "answer_4ffa04a2_1",
+        "answer_4ffa04a2_2",
+        "answer_4ffa04a2_3",
+        "answer_4ffa04a2_4",
+        "answer_4ffa04a2_5",
+        "answer_4ffa04a2_6"
+      ]
+    },
+    {
+      "id": "gpt4_65aabe59",
+      "excludedGold": [
+        "answer_30dfe889_2"
+      ]
+    },
+    {
+      "id": "982b5123",
+      "excludedGold": [
+        "answer_ab603dd5_1",
+        "answer_ab603dd5_2"
+      ]
+    },
+    {
+      "id": "b9cfe692",
+      "excludedGold": [
+        "answer_5e3bb940_1",
+        "answer_5e3bb940_2",
+        "answer_5e3bb940_3"
+      ]
+    },
+    {
+      "id": "gpt4_4edbafa2",
+      "excludedGold": [
+        "answer_0a00c163_1",
+        "answer_0a00c163_2"
+      ]
+    },
+    {
+      "id": "gpt4_483dd43c",
+      "excludedGold": [
+        "answer_fb793c87_1"
+      ]
+    },
+    {
+      "id": "e4e14d04",
+      "excludedGold": [
+        "answer_cf425855_1"
+      ]
+    },
+    {
+      "id": "c9f37c46",
+      "excludedGold": [
+        "answer_cdba3d9f_1",
+        "answer_cdba3d9f_2"
+      ]
+    },
+    {
+      "id": "gpt4_b4a80587",
+      "excludedGold": [
+        "answer_b9d9150e_2"
+      ]
+    },
+    {
+      "id": "gpt4_9a159967",
+      "excludedGold": [
+        "answer_8a42fedf_1",
+        "answer_8a42fedf_3"
+      ]
+    },
+    {
+      "id": "cc6d1ec1",
+      "excludedGold": [
+        "answer_be73098b_2"
+      ]
+    },
+    {
+      "id": "gpt4_8c8961ae",
+      "excludedGold": [
+        "answer_72d9aa58_1"
+      ]
+    },
+    {
+      "id": "gpt4_d9af6064",
+      "excludedGold": [
+        "answer_da704e79_1",
+        "answer_da704e79_2"
+      ]
+    },
+    {
+      "id": "d01c6aa8",
+      "excludedGold": [
+        "answer_991d55e5_2"
+      ]
+    },
+    {
+      "id": "993da5e2",
+      "excludedGold": [
+        "answer_54f0d6f9_2"
+      ]
+    },
+    {
+      "id": "a3045048",
+      "excludedGold": [
+        "answer_016f6bd4_2"
+      ]
+    },
+    {
+      "id": "gpt4_cd90e484",
+      "excludedGold": [
+        "answer_aa930b56_1",
+        "answer_aa930b56_2"
+      ]
+    },
+    {
+      "id": "gpt4_4cd9eba1",
+      "excludedGold": [
+        "answer_5fcca8bc_1",
+        "answer_5fcca8bc_2"
+      ]
+    },
+    {
+      "id": "gpt4_93f6379c",
+      "excludedGold": [
+        "answer_544fe66c_1"
+      ]
+    },
+    {
+      "id": "gpt4_2f56ae70",
+      "excludedGold": [
+        "answer_7a36e820_1",
+        "answer_7a36e820_2",
+        "answer_7a36e820_3"
+      ]
+    },
+    {
+      "id": "6613b389",
+      "excludedGold": [
+        "answer_aaf71ce2_3"
+      ]
+    },
+    {
+      "id": "gpt4_78cf46a3",
+      "excludedGold": [
+        "answer_5a78688d_1",
+        "answer_5a78688d_2"
+      ]
+    },
+    {
+      "id": "gpt4_0a05b494",
+      "excludedGold": [
+        "answer_a68db5db_1",
+        "answer_a68db5db_2"
+      ]
+    },
+    {
+      "id": "gpt4_1a1dc16d",
+      "excludedGold": [
+        "answer_faad7d7a_2"
+      ]
+    },
+    {
+      "id": "gpt4_2f584639",
+      "excludedGold": [
+        "answer_11a8f823_1"
+      ]
+    },
+    {
+      "id": "gpt4_213fd887",
+      "excludedGold": [
+        "answer_53582e7e_1",
+        "answer_53582e7e_2"
+      ]
+    },
+    {
+      "id": "gpt4_5438fa52",
+      "excludedGold": [
+        "answer_b10f3828_1"
+      ]
+    },
+    {
+      "id": "gpt4_fe651585",
+      "excludedGold": [
+        "answer_65600ff6_1"
+      ]
+    },
+    {
+      "id": "8c18457d",
+      "excludedGold": [
+        "answer_124f5dc3_1",
+        "answer_124f5dc3_2"
+      ]
+    },
+    {
+      "id": "gpt4_70e84552_abs",
+      "excludedGold": [
+        "answer_b3070ec4_abs_1",
+        "answer_b3070ec4_abs_2"
+      ]
+    },
+    {
+      "id": "gpt4_c27434e8_abs",
+      "excludedGold": [
+        "answer_d8e33f5c_abs_1"
+      ]
+    },
+    {
+      "id": "gpt4_fe651585_abs",
+      "excludedGold": [
+        "answer_65600ff6_abs_1",
+        "answer_65600ff6_abs_2"
+      ]
+    },
+    {
+      "id": "2133c1b5",
+      "excludedGold": [
+        "answer_52382508_2"
+      ]
+    }
+  ]
+}

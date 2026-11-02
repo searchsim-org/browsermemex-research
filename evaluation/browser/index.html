@@ -1,0 +1,19 @@
+<!doctype html><meta charset="utf-8"><title>BrowserMemex reproducibility laboratory</title>
+<style>body{font:16px/1.6 system-ui;margin:50px auto;max-width:1000px;padding:0 24px;color:#172c3c;background:#f4f6f6}h1{line-height:1.15}button{font:inherit;border:1px solid #648690;border-radius:7px;padding:10px 15px;margin:8px 8px 8px 0;background:white;cursor:pointer}pre{white-space:pre-wrap;background:white;border:1px solid #ccd7db;padding:22px;font:13px/1.5 monospace}small{color:#496472}</style>
+<small>BMTR-1 · ACTUAL BROWSERMEMEX CORE · SYNTHETIC FIXTURES</small>
+<h1>BrowserMemex reproducibility laboratory</h1>
+<p>This harness loads the frozen BrowserMemex memory implementation and SQLite WebAssembly in a dedicated browser worker. It tests generated replay data and browser-owned persistent storage. It does not impersonate a user study or an installed extension.</p>
+<button id="run" disabled>Run temporal replay</button><button id="write" disabled>Write persistent fixture</button><button id="verify" disabled>Verify persistence after reload</button>
+<pre id="output" aria-live="polite">Ready. Choose a test.</pre>
+<p><a href="../PROTOCOL.md">Evaluation protocol</a> · <a href="../results/browser-results.json">Saved browser measurements</a></p>
+<script type="module">
+const output=document.querySelector('#output');let worker=new Worker('/browser/worker.mjs?sqlite3.dir='+encodeURIComponent(new URL('/browser/sqlite',location.origin).href),{type:'module'});
+for(const id of ['run','write','verify'])document.querySelector('#'+id).onclick=()=>{output.textContent='Running '+id+'…';worker.postMessage({action:id});};
+worker.onmessage=async({data})=>{
+ if(data.action==='ready'){output.textContent='Ready. SQLite worker initialized.';for(const id of ['run','write','verify'])document.querySelector('#'+id).disabled=false;return;}
+ if(data.error){output.textContent=data.error;return;}
+ output.textContent=JSON.stringify({...data,raw:undefined,exportBytes:undefined},null,2);
+ await fetch('/record',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+ if(data.exportBytes){await fetch('/sqlite-export',{method:'POST',body:new Uint8Array(data.exportBytes)});delete data.exportBytes;output.textContent=JSON.stringify(data,null,2);}
+};worker.onerror=e=>{output.textContent=e.message;};
+</script>

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checker": "Independent Python recount from raw routing inputs/outcomes and raw numeric skill traces",
+  "routingInputs": 15000,
+  "routingDecisions": 45000,
+  "routingCells": 45,
+  "skillAttempts": 4408,
+  "checks": [
+    "Task truth equals independently stored input label",
+    "Decision correct field equals chosen/expected equality",
+    "Fallback counters equal actual decision source counts",
+    "All per-seed totals match summary",
+    "All future-reuse labels recomputed from future quantity/price examples and future use counts",
+    "All value-checked statuses recomputed from executed outputs",
+    "Script and protocol SHA-256 match saved files"
+  ]
+}

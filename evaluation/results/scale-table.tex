@@ -1,0 +1,10 @@
+\begin{tabular}{@{}rrrrrr@{}}\toprule Records & Inserts/s & DB & RSS & First P95 & Repeated P95\\\midrule
+\multicolumn{6}{l}{\textit{Original schema}}\\
+1,000 & 3983 & 0.61 & 146.0 & 0.214 & 0.186 \\
+10,000 & 1286 & 4.79 & 184.1 & 0.168 & 0.151 \\
+100,000 & 145 & 47.60 & 291.5 & 0.233 & 0.180 \\
+\multicolumn{6}{l}{\textit{Companion composite index}}\\
+1,000 & 5108 & 0.67 & 146.0 & 0.212 & 0.173 \\
+10,000 & 6767 & 5.33 & 186.6 & 0.167 & 0.160 \\
+100,000 & 6810 & 53.02 & 340.4 & 0.197 & 0.184 \\
+\bottomrule\end{tabular}

@@ -1,0 +1,1581 @@
+{
+  "rq": "RQ1 hard: harder workload, same model in both roles",
+  "seed": 20260603,
+  "nScenarios": 30,
+  "model": "gemma4-31b-it",
+  "summary": {
+    "model": "gemma4-31b-it",
+    "shared": {
+      "accuracy": "1.000 ± 0.000",
+      "agentBTokens": "400 ± 11"
+    },
+    "isolated": {
+      "accuracy": "1.000 ± 0.000",
+      "agentBTokens": "1131 ± 11"
+    }
+  },
+  "shared": [
+    {
+      "scenarioId": "S0",
+      "accuracy": 1,
+      "agentBTokens": 383,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Active",
+          "predicted": "Active",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Marcus Smith",
+          "predicted": "Marcus Smith",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-09-10",
+          "predicted": "2026-09-10",
+          "matched": true
+        }
+      ],
+      "agentATokens": 441
+    },
+    {
+      "scenarioId": "S1",
+      "accuracy": 1,
+      "agentBTokens": 436,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "6.11.1",
+          "predicted": "6.11.1",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0xb24dc1",
+          "predicted": "0xb24dc1",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-07-28",
+          "predicted": "2026-07-28",
+          "matched": true
+        }
+      ],
+      "agentATokens": 433
+    },
+    {
+      "scenarioId": "S2",
+      "accuracy": 1,
+      "agentBTokens": 380,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P3",
+          "predicted": "P3",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Farah Kim",
+          "predicted": "Farah Kim",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "DNS-failover",
+          "predicted": "DNS-failover",
+          "matched": true
+        }
+      ],
+      "agentATokens": 438
+    },
+    {
+      "scenarioId": "S3",
+      "accuracy": 1,
+      "agentBTokens": 390,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Stalled",
+          "predicted": "Stalled",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Marcus Smith",
+          "predicted": "Marcus Smith",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-10-05",
+          "predicted": "2026-10-05",
+          "matched": true
+        }
+      ],
+      "agentATokens": 445
+    },
+    {
+      "scenarioId": "S4",
+      "accuracy": 1,
+      "agentBTokens": 444,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "6.5.18",
+          "predicted": "6.5.18",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0x504024",
+          "predicted": "0x504024",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-11-12",
+          "predicted": "2026-11-12",
+          "matched": true
+        }
+      ],
+      "agentATokens": 438
+    },
+    {
+      "scenarioId": "S5",
+      "accuracy": 1,
+      "agentBTokens": 371,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P3",
+          "predicted": "P3",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Hannah Owens",
+          "predicted": "Hannah Owens",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "Rollback",
+          "predicted": "Rollback",
+          "matched": true
+        }
+      ],
+      "agentATokens": 433
+    },
+    {
+      "scenarioId": "S6",
+      "accuracy": 1,
+      "agentBTokens": 383,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Paused",
+          "predicted": "Paused",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Chen Park",
+          "predicted": "Chen Park",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-11-14",
+          "predicted": "2026-11-14",
+          "matched": true
+        }
+      ],
+      "agentATokens": 440
+    },
+    {
+      "scenarioId": "S7",
+      "accuracy": 1,
+      "agentBTokens": 440,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "1.4.14",
+          "predicted": "1.4.14",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0x91ce15",
+          "predicted": "0x91ce15",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-07-07",
+          "predicted": "2026-07-07",
+          "matched": true
+        }
+      ],
+      "agentATokens": 436
+    },
+    {
+      "scenarioId": "S8",
+      "accuracy": 1,
+      "agentBTokens": 371,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P4",
+          "predicted": "P4",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Hannah Owens",
+          "predicted": "Hannah Owens",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "Rollback",
+          "predicted": "Rollback",
+          "matched": true
+        }
+      ],
+      "agentATokens": 432
+    },
+    {
+      "scenarioId": "S9",
+      "accuracy": 1,
+      "agentBTokens": 387,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Stalled",
+          "predicted": "Stalled",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Chen Park",
+          "predicted": "Chen Park",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-08-10",
+          "predicted": "2026-08-10",
+          "matched": true
+        }
+      ],
+      "agentATokens": 443
+    },
+    {
+      "scenarioId": "S10",
+      "accuracy": 1,
+      "agentBTokens": 444,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "6.6.21",
+          "predicted": "6.6.21",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0x22d448",
+          "predicted": "0x22d448",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-08-05",
+          "predicted": "2026-08-05",
+          "matched": true
+        }
+      ],
+      "agentATokens": 437
+    },
+    {
+      "scenarioId": "S11",
+      "accuracy": 1,
+      "agentBTokens": 371,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P3",
+          "predicted": "P3",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Eli Chen",
+          "predicted": "Eli Chen",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "Rollback",
+          "predicted": "Rollback",
+          "matched": true
+        }
+      ],
+      "agentATokens": 432
+    },
+    {
+      "scenarioId": "S12",
+      "accuracy": 1,
+      "agentBTokens": 387,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Cancelled",
+          "predicted": "Cancelled",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Priya Patel",
+          "predicted": "Priya Patel",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-07-08",
+          "predicted": "2026-07-08",
+          "matched": true
+        }
+      ],
+      "agentATokens": 443
+    },
+    {
+      "scenarioId": "S13",
+      "accuracy": 1,
+      "agentBTokens": 436,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "2.7.2",
+          "predicted": "2.7.2",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0xe87c7d",
+          "predicted": "0xe87c7d",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-07-28",
+          "predicted": "2026-07-28",
+          "matched": true
+        }
+      ],
+      "agentATokens": 434
+    },
+    {
+      "scenarioId": "S14",
+      "accuracy": 1,
+      "agentBTokens": 371,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P2",
+          "predicted": "P2",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Eli Chen",
+          "predicted": "Eli Chen",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "Rollback",
+          "predicted": "Rollback",
+          "matched": true
+        }
+      ],
+      "agentATokens": 432
+    },
+    {
+      "scenarioId": "S15",
+      "accuracy": 1,
+      "agentBTokens": 389,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Paused",
+          "predicted": "Paused",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Chen Park",
+          "predicted": "Chen Park",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-09-21",
+          "predicted": "2026-09-21",
+          "matched": true
+        }
+      ],
+      "agentATokens": 444
+    },
+    {
+      "scenarioId": "S16",
+      "accuracy": 1,
+      "agentBTokens": 440,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "2.10.0",
+          "predicted": "2.10.0",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0xd025c7",
+          "predicted": "0xd025c7",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-07-26",
+          "predicted": "2026-07-26",
+          "matched": true
+        }
+      ],
+      "agentATokens": 436
+    },
+    {
+      "scenarioId": "S17",
+      "accuracy": 1,
+      "agentBTokens": 371,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P2",
+          "predicted": "P2",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Eli Chen",
+          "predicted": "Eli Chen",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "Hotfix",
+          "predicted": "Hotfix",
+          "matched": true
+        }
+      ],
+      "agentATokens": 433
+    },
+    {
+      "scenarioId": "S18",
+      "accuracy": 1,
+      "agentBTokens": 386,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Paused",
+          "predicted": "Paused",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Chen Park",
+          "predicted": "Chen Park",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-11-13",
+          "predicted": "2026-11-13",
+          "matched": true
+        }
+      ],
+      "agentATokens": 442
+    },
+    {
+      "scenarioId": "S19",
+      "accuracy": 1,
+      "agentBTokens": 440,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "1.0.28",
+          "predicted": "1.0.28",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0x8c3ed6",
+          "predicted": "0x8c3ed6",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-06-03",
+          "predicted": "2026-06-03",
+          "matched": true
+        }
+      ],
+      "agentATokens": 436
+    },
+    {
+      "scenarioId": "S20",
+      "accuracy": 1,
+      "agentBTokens": 371,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P1",
+          "predicted": "P1",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Eli Chen",
+          "predicted": "Eli Chen",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "Hotfix",
+          "predicted": "Hotfix",
+          "matched": true
+        }
+      ],
+      "agentATokens": 432
+    },
+    {
+      "scenarioId": "S21",
+      "accuracy": 1,
+      "agentBTokens": 386,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Completed",
+          "predicted": "Completed",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Marcus Smith",
+          "predicted": "Marcus Smith",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-09-07",
+          "predicted": "2026-09-07",
+          "matched": true
+        }
+      ],
+      "agentATokens": 443
+    },
+    {
+      "scenarioId": "S22",
+      "accuracy": 1,
+      "agentBTokens": 444,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "4.6.17",
+          "predicted": "4.6.17",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0x575f84",
+          "predicted": "0x575f84",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-10-05",
+          "predicted": "2026-10-05",
+          "matched": true
+        }
+      ],
+      "agentATokens": 438
+    },
+    {
+      "scenarioId": "S23",
+      "accuracy": 1,
+      "agentBTokens": 375,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P2",
+          "predicted": "P2",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Daria Park",
+          "predicted": "Daria Park",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "Rollback",
+          "predicted": "Rollback",
+          "matched": true
+        }
+      ],
+      "agentATokens": 434
+    },
+    {
+      "scenarioId": "S24",
+      "accuracy": 1,
+      "agentBTokens": 388,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Stalled",
+          "predicted": "Stalled",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Priya Patel",
+          "predicted": "Priya Patel",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-10-19",
+          "predicted": "2026-10-19",
+          "matched": true
+        }
+      ],
+      "agentATokens": 444
+    },
+    {
+      "scenarioId": "S25",
+      "accuracy": 1,
+      "agentBTokens": 440,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "1.3.28",
+          "predicted": "1.3.28",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0x297fa6",
+          "predicted": "0x297fa6",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-08-04",
+          "predicted": "2026-08-04",
+          "matched": true
+        }
+      ],
+      "agentATokens": 435
+    },
+    {
+      "scenarioId": "S26",
+      "accuracy": 1,
+      "agentBTokens": 376,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P2",
+          "predicted": "P2",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Farah Kim",
+          "predicted": "Farah Kim",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "Config-change",
+          "predicted": "Config-change",
+          "matched": true
+        }
+      ],
+      "agentATokens": 437
+    },
+    {
+      "scenarioId": "S27",
+      "accuracy": 1,
+      "agentBTokens": 386,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Completed",
+          "predicted": "Completed",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Dana Kim",
+          "predicted": "Dana Kim",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-09-16",
+          "predicted": "2026-09-16",
+          "matched": true
+        }
+      ],
+      "agentATokens": 443
+    },
+    {
+      "scenarioId": "S28",
+      "accuracy": 1,
+      "agentBTokens": 440,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "6.8.6",
+          "predicted": "6.8.6",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0x3a759f",
+          "predicted": "0x3a759f",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-07-14",
+          "predicted": "2026-07-14",
+          "matched": true
+        }
+      ],
+      "agentATokens": 435
+    },
+    {
+      "scenarioId": "S29",
+      "accuracy": 1,
+      "agentBTokens": 375,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P2",
+          "predicted": "P2",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Eli Chen",
+          "predicted": "Eli Chen",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "Cache-flush",
+          "predicted": "Cache-flush",
+          "matched": true
+        }
+      ],
+      "agentATokens": 435
+    }
+  ],
+  "isolated": [
+    {
+      "scenarioId": "S0",
+      "accuracy": 1,
+      "agentBTokens": 1169,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Active",
+          "predicted": "Active",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Marcus Smith",
+          "predicted": "Marcus Smith",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-09-10",
+          "predicted": "2026-09-10",
+          "matched": true
+        }
+      ],
+      "agentATokens": 441
+    },
+    {
+      "scenarioId": "S1",
+      "accuracy": 1,
+      "agentBTokens": 1102,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "6.11.1",
+          "predicted": "6.11.1",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0xb24dc1",
+          "predicted": "0xb24dc1",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-07-28",
+          "predicted": "2026-07-28",
+          "matched": true
+        }
+      ],
+      "agentATokens": 433
+    },
+    {
+      "scenarioId": "S2",
+      "accuracy": 1,
+      "agentBTokens": 1124,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P3",
+          "predicted": "P3",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Farah Kim",
+          "predicted": "Farah Kim",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "DNS-failover",
+          "predicted": "DNS-failover",
+          "matched": true
+        }
+      ],
+      "agentATokens": 438
+    },
+    {
+      "scenarioId": "S3",
+      "accuracy": 1,
+      "agentBTokens": 1176,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Stalled",
+          "predicted": "Stalled",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Marcus Smith",
+          "predicted": "Marcus Smith",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-10-05",
+          "predicted": "2026-10-05",
+          "matched": true
+        }
+      ],
+      "agentATokens": 445
+    },
+    {
+      "scenarioId": "S4",
+      "accuracy": 1,
+      "agentBTokens": 1110,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "6.5.18",
+          "predicted": "6.5.18",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0x504024",
+          "predicted": "0x504024",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-11-12",
+          "predicted": "2026-11-12",
+          "matched": true
+        }
+      ],
+      "agentATokens": 438
+    },
+    {
+      "scenarioId": "S5",
+      "accuracy": 1,
+      "agentBTokens": 1112,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P3",
+          "predicted": "P3",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Hannah Owens",
+          "predicted": "Hannah Owens",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "Rollback",
+          "predicted": "Rollback",
+          "matched": true
+        }
+      ],
+      "agentATokens": 433
+    },
+    {
+      "scenarioId": "S6",
+      "accuracy": 1,
+      "agentBTokens": 1169,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Paused",
+          "predicted": "Paused",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Chen Park",
+          "predicted": "Chen Park",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-11-14",
+          "predicted": "2026-11-14",
+          "matched": true
+        }
+      ],
+      "agentATokens": 440
+    },
+    {
+      "scenarioId": "S7",
+      "accuracy": 1,
+      "agentBTokens": 1106,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "1.4.14",
+          "predicted": "1.4.14",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0x91ce15",
+          "predicted": "0x91ce15",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-07-07",
+          "predicted": "2026-07-07",
+          "matched": true
+        }
+      ],
+      "agentATokens": 436
+    },
+    {
+      "scenarioId": "S8",
+      "accuracy": 1,
+      "agentBTokens": 1112,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P4",
+          "predicted": "P4",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Hannah Owens",
+          "predicted": "Hannah Owens",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "Rollback",
+          "predicted": "Rollback",
+          "matched": true
+        }
+      ],
+      "agentATokens": 432
+    },
+    {
+      "scenarioId": "S9",
+      "accuracy": 1,
+      "agentBTokens": 1173,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Stalled",
+          "predicted": "Stalled",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Chen Park",
+          "predicted": "Chen Park",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-08-10",
+          "predicted": "2026-08-10",
+          "matched": true
+        }
+      ],
+      "agentATokens": 443
+    },
+    {
+      "scenarioId": "S10",
+      "accuracy": 1,
+      "agentBTokens": 1110,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "6.6.21",
+          "predicted": "6.6.21",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0x22d448",
+          "predicted": "0x22d448",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-08-05",
+          "predicted": "2026-08-05",
+          "matched": true
+        }
+      ],
+      "agentATokens": 437
+    },
+    {
+      "scenarioId": "S11",
+      "accuracy": 1,
+      "agentBTokens": 1112,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P3",
+          "predicted": "P3",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Eli Chen",
+          "predicted": "Eli Chen",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "Rollback",
+          "predicted": "Rollback",
+          "matched": true
+        }
+      ],
+      "agentATokens": 432
+    },
+    {
+      "scenarioId": "S12",
+      "accuracy": 1,
+      "agentBTokens": 1173,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Cancelled",
+          "predicted": "Cancelled",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Priya Patel",
+          "predicted": "Priya Patel",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-07-08",
+          "predicted": "2026-07-08",
+          "matched": true
+        }
+      ],
+      "agentATokens": 443
+    },
+    {
+      "scenarioId": "S13",
+      "accuracy": 1,
+      "agentBTokens": 1102,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "2.7.2",
+          "predicted": "2.7.2",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0xe87c7d",
+          "predicted": "0xe87c7d",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-07-28",
+          "predicted": "2026-07-28",
+          "matched": true
+        }
+      ],
+      "agentATokens": 434
+    },
+    {
+      "scenarioId": "S14",
+      "accuracy": 1,
+      "agentBTokens": 1112,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P2",
+          "predicted": "P2",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Eli Chen",
+          "predicted": "Eli Chen",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "Rollback",
+          "predicted": "Rollback",
+          "matched": true
+        }
+      ],
+      "agentATokens": 432
+    },
+    {
+      "scenarioId": "S15",
+      "accuracy": 1,
+      "agentBTokens": 1175,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Paused",
+          "predicted": "Paused",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Chen Park",
+          "predicted": "Chen Park",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-09-21",
+          "predicted": "2026-09-21",
+          "matched": true
+        }
+      ],
+      "agentATokens": 444
+    },
+    {
+      "scenarioId": "S16",
+      "accuracy": 1,
+      "agentBTokens": 1106,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "2.10.0",
+          "predicted": "2.10.0",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0xd025c7",
+          "predicted": "0xd025c7",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-07-26",
+          "predicted": "2026-07-26",
+          "matched": true
+        }
+      ],
+      "agentATokens": 436
+    },
+    {
+      "scenarioId": "S17",
+      "accuracy": 1,
+      "agentBTokens": 1112,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P2",
+          "predicted": "P2",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Eli Chen",
+          "predicted": "Eli Chen",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "Hotfix",
+          "predicted": "Hotfix",
+          "matched": true
+        }
+      ],
+      "agentATokens": 433
+    },
+    {
+      "scenarioId": "S18",
+      "accuracy": 1,
+      "agentBTokens": 1172,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Paused",
+          "predicted": "Paused",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Chen Park",
+          "predicted": "Chen Park",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-11-13",
+          "predicted": "2026-11-13",
+          "matched": true
+        }
+      ],
+      "agentATokens": 442
+    },
+    {
+      "scenarioId": "S19",
+      "accuracy": 1,
+      "agentBTokens": 1106,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "1.0.28",
+          "predicted": "1.0.28",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0x8c3ed6",
+          "predicted": "0x8c3ed6",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-06-03",
+          "predicted": "2026-06-03",
+          "matched": true
+        }
+      ],
+      "agentATokens": 436
+    },
+    {
+      "scenarioId": "S20",
+      "accuracy": 1,
+      "agentBTokens": 1112,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P1",
+          "predicted": "P1",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Eli Chen",
+          "predicted": "Eli Chen",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "Hotfix",
+          "predicted": "Hotfix",
+          "matched": true
+        }
+      ],
+      "agentATokens": 432
+    },
+    {
+      "scenarioId": "S21",
+      "accuracy": 1,
+      "agentBTokens": 1172,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Completed",
+          "predicted": "Completed",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Marcus Smith",
+          "predicted": "Marcus Smith",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-09-07",
+          "predicted": "2026-09-07",
+          "matched": true
+        }
+      ],
+      "agentATokens": 443
+    },
+    {
+      "scenarioId": "S22",
+      "accuracy": 1,
+      "agentBTokens": 1110,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "4.6.17",
+          "predicted": "4.6.17",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0x575f84",
+          "predicted": "0x575f84",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-10-05",
+          "predicted": "2026-10-05",
+          "matched": true
+        }
+      ],
+      "agentATokens": 438
+    },
+    {
+      "scenarioId": "S23",
+      "accuracy": 1,
+      "agentBTokens": 1116,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P2",
+          "predicted": "P2",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Daria Park",
+          "predicted": "Daria Park",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "Rollback",
+          "predicted": "Rollback",
+          "matched": true
+        }
+      ],
+      "agentATokens": 434
+    },
+    {
+      "scenarioId": "S24",
+      "accuracy": 1,
+      "agentBTokens": 1174,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Stalled",
+          "predicted": "Stalled",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Priya Patel",
+          "predicted": "Priya Patel",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-10-19",
+          "predicted": "2026-10-19",
+          "matched": true
+        }
+      ],
+      "agentATokens": 444
+    },
+    {
+      "scenarioId": "S25",
+      "accuracy": 1,
+      "agentBTokens": 1106,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "1.3.28",
+          "predicted": "1.3.28",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0x297fa6",
+          "predicted": "0x297fa6",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-08-04",
+          "predicted": "2026-08-04",
+          "matched": true
+        }
+      ],
+      "agentATokens": 435
+    },
+    {
+      "scenarioId": "S26",
+      "accuracy": 1,
+      "agentBTokens": 1120,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P2",
+          "predicted": "P2",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Farah Kim",
+          "predicted": "Farah Kim",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "Config-change",
+          "predicted": "Config-change",
+          "matched": true
+        }
+      ],
+      "agentATokens": 437
+    },
+    {
+      "scenarioId": "S27",
+      "accuracy": 1,
+      "agentBTokens": 1172,
+      "answers": [
+        {
+          "q": "What is the project's current status?",
+          "gold": "Completed",
+          "predicted": "Completed",
+          "matched": true
+        },
+        {
+          "q": "Who is the day-to-day owner of this project?",
+          "gold": "Dana Kim",
+          "predicted": "Dana Kim",
+          "matched": true
+        },
+        {
+          "q": "What is the hard deadline (YYYY-MM-DD)?",
+          "gold": "2026-09-16",
+          "predicted": "2026-09-16",
+          "matched": true
+        }
+      ],
+      "agentATokens": 443
+    },
+    {
+      "scenarioId": "S28",
+      "accuracy": 1,
+      "agentBTokens": 1106,
+      "answers": [
+        {
+          "q": "What is the release version number?",
+          "gold": "6.8.6",
+          "predicted": "6.8.6",
+          "matched": true
+        },
+        {
+          "q": "What is the active signing key fingerprint?",
+          "gold": "0x3a759f",
+          "predicted": "0x3a759f",
+          "matched": true
+        },
+        {
+          "q": "What is the ship date (YYYY-MM-DD)?",
+          "gold": "2026-07-14",
+          "predicted": "2026-07-14",
+          "matched": true
+        }
+      ],
+      "agentATokens": 435
+    },
+    {
+      "scenarioId": "S29",
+      "accuracy": 1,
+      "agentBTokens": 1116,
+      "answers": [
+        {
+          "q": "What severity was this incident triaged at?",
+          "gold": "P2",
+          "predicted": "P2",
+          "matched": true
+        },
+        {
+          "q": "Who is the on-call incident commander?",
+          "gold": "Eli Chen",
+          "predicted": "Eli Chen",
+          "matched": true
+        },
+        {
+          "q": "What resolution was applied?",
+          "gold": "Cache-flush",
+          "predicted": "Cache-flush",
+          "matched": true
+        }
+      ],
+      "agentATokens": 435
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "cases": 40,
+  "trialsPerConfiguration": 5,
+  "configurations": 8,
+  "initialInsertions": 220000,
+  "conflictingUpdates": 22000,
+  "queryOutcomes": 32000,
+  "correctQueryOutcomes": 32000,
+  "checks": [
+    "Every updated key produced one stored new row and one update to existing state",
+    "All query predictions independently recounted against expected values",
+    "All raw operation counts match workload sizes",
+    "Reported medians recomputed from5fresh-process cases per group"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "reader": "Python sqlite3",
+  "sqliteVersion": "3.43.2",
+  "rows": [
+    [
+      "persistentfixture",
+      "status",
+      "verified"
+    ]
+  ],
+  "integrity": "ok"
+}

@@ -1,0 +1,131 @@
+{
+  "rq": "RQ2 (real LLM): rule-based vs LLM-based router",
+  "seed": 20260516,
+  "nTrials": 3,
+  "nTasksPerTrial": 100,
+  "model": "qwen3-next-80b-a3b-instruct",
+  "endpoint": "https://llms.innkube.fim.uni-passau.de/v1/chat/completions",
+  "llmInferenceCostUsdPerCall": 0.0008,
+  "agents": {
+    "claude-code": {
+      "baseCostUsd": 0.04,
+      "baseSuccess": 0.94,
+      "latencyMs": 8000
+    },
+    "cursor": {
+      "baseCostUsd": 0.05,
+      "baseSuccess": 0.91,
+      "latencyMs": 9000
+    },
+    "codex": {
+      "baseCostUsd": 0.08,
+      "baseSuccess": 0.87,
+      "latencyMs": 7000
+    }
+  },
+  "categories": [
+    {
+      "kind": "dashboard",
+      "weight": 0.2,
+      "urlHint": "grafana.acme.com/dashboard/abc",
+      "bestAgent": "claude-code",
+      "costMultiplier": 1
+    },
+    {
+      "kind": "ticket",
+      "weight": 0.2,
+      "urlHint": "acme.atlassian.net/browse/PROJ-1",
+      "bestAgent": "cursor",
+      "costMultiplier": 1
+    },
+    {
+      "kind": "search",
+      "weight": 0.1,
+      "urlHint": "google.com/search?q=x",
+      "bestAgent": "cursor",
+      "costMultiplier": 0.8
+    },
+    {
+      "kind": "email",
+      "weight": 0.15,
+      "urlHint": "mail.google.com/u/0/",
+      "bestAgent": "claude-code",
+      "costMultiplier": 1
+    },
+    {
+      "kind": "form",
+      "weight": 0.15,
+      "urlHint": "workday.acme.com/form/789",
+      "bestAgent": "codex",
+      "costMultiplier": 1.2
+    },
+    {
+      "kind": "coding",
+      "weight": 0.2,
+      "urlHint": "github.com/acme/repo/pull/42",
+      "bestAgent": "claude-code",
+      "costMultiplier": 1.5
+    }
+  ],
+  "summary": {
+    "model": "qwen3-next-80b-a3b-instruct",
+    "rule": {
+      "accuracy": "1.000 ± 0.000",
+      "totalCostUsd": "5.347 ± 0.245",
+      "p95LatencyMs": "157.26 ± 18.21",
+      "llmCalls": "20.0 ± 3.4"
+    },
+    "llm": {
+      "accuracy": "1.000 ± 0.000",
+      "totalCostUsd": "5.411 ± 0.242",
+      "p95LatencyMs": "172.39 ± 7.50",
+      "llmCalls": "100.0 ± 0.0"
+    }
+  },
+  "raw": {
+    "rule": {
+      "accuracy": [
+        1,
+        1,
+        1
+      ],
+      "totalCostUsd": [
+        5.578399999999998,
+        5.313999999999997,
+        5.149599999999998
+      ],
+      "p95LatencyMs": [
+        172.036917,
+        140.1186044999982,
+        159.62600449999806
+      ],
+      "llmCalls": [
+        23,
+        20,
+        17
+      ]
+    },
+    "llm": {
+      "accuracy": [
+        1,
+        1,
+        1
+      ],
+      "totalCostUsd": [
+        5.639999999999993,
+        5.377999999999992,
+        5.215999999999992
+      ],
+      "p95LatencyMs": [
+        170.02737115000068,
+        179.87231815000285,
+        167.26509405000033
+      ],
+      "llmCalls": [
+        100,
+        100,
+        100
+      ]
+    }
+  }
+}

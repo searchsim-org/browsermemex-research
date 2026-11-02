@@ -1,0 +1,23 @@
+{
+  "node": "v26.10.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "os": "24.6.0",
+  "cpu": "Apple M1 Pro",
+  "logicalCpus": 10,
+  "totalMemoryBytes": 34359738368,
+  "sqlite": "3.53.0",
+  "started": "2026-11-01T02:05:30.630Z",
+  "entitiesPerSeed": 200,
+  "seeds": [
+    27001,
+    27002,
+    27003,
+    27004,
+    27005
+  ],
+  "protocolSha256": "21827ee169f79f1524d8e8d3524d78448ef90b709943338d0e3bc87988d680fb",
+  "finished": "2026-11-01T02:07:35.041Z",
+  "queryOutcomes": 264000,
+  "dataFiles": 40
+}

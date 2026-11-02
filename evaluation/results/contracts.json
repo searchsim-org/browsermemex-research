@@ -1,0 +1,52 @@
+[
+  {
+    "name": "cross-agent shared read with writer provenance",
+    "passed": true,
+    "writer": "agent-a",
+    "reader": "agent-b",
+    "transport": "direct core API, not separate agent runtime"
+  },
+  {
+    "name": "profile isolation when profile is supplied",
+    "passed": true,
+    "defaultVisible": 1
+  },
+  {
+    "name": "transaction rollback leaves no partial write",
+    "passed": true,
+    "injectedFailure": true
+  },
+  {
+    "name": "legacy envelope accepts recomputed checksum after payload change",
+    "passed": true,
+    "finding": "v1 uses an unkeyed FNV checksum, not a cryptographic signature"
+  },
+  {
+    "name": "v2 signature roundtrip and tamper/untrusted-key rejection",
+    "passed": true,
+    "validRoundtrips": 100,
+    "rejectedTamperAndWrongSigner": 200
+  },
+  {
+    "name": "operational success can promote a semantically wrong template",
+    "passed": true,
+    "operationalSuccesses": 5,
+    "semanticSuccesses": 0,
+    "promoted": 1
+  },
+  {
+    "name": "semantic-validator adapter rejects known incorrect completions",
+    "passed": true,
+    "traces": 100,
+    "semanticallyCorrect": 50,
+    "promotedGood": 1,
+    "promotedWrong": 0,
+    "limitation": "validator is fixture-specific; not a general semantic oracle"
+  },
+  {
+    "name": "composite index preserves held-out replay outcomes",
+    "passed": true,
+    "seed": 27008,
+    "comparedQueries": 330
+  }
+]

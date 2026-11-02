@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "browserRunIndex": 4,
+  "seed": 27006,
+  "queryCount": 330,
+  "methods": 5,
+  "comparedMethodOutcomes": 1650,
+  "comparison": "Exact equality of every scored field, including predicted values, evidence presence and counts; timing excluded",
+  "supersededNetworkCheck": [
+    0
+  ],
+  "supersededReason": "Initial exploratory network check returned no evidence and did not assert a positive retrieval; use later known-positive fixture."
+}

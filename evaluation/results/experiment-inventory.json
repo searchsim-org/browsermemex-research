@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "primaryReplayOutcomes": 369600,
+  "independentPrimaryWorlds": 5,
+  "rawLineCounts": {
+    "query-outcomes.jsonl": 264000,
+    "strong-controls-outcomes.jsonl": 105600,
+    "orchestration-routing-inputs.jsonl": 15000,
+    "orchestration-routing-outcomes.jsonl": 45000
+  },
+  "coverageWorldConfigurations": 40,
+  "subsamplesPerConfiguration": 100,
+  "ablationQueryInstances": 26400,
+  "ablationOutcomes": 132000,
+  "routingDecisions": 45000,
+  "numericSkillAttempts": 4408,
+  "newModelCalls": 0,
+  "publicQuestions": 500,
+  "recallEligibleQuestions": 470,
+  "scaleSizes": [
+    1000,
+    10000,
+    100000
+  ]
+}

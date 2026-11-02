@@ -1,0 +1,12 @@
+SPDX-License-Identifier: CC0-1.0
+
+The newly generated BMTR-1 fixtures, synthetic routing tasks, numeric workflow
+traces, generated truth ledgers and their annotations are dedicated to the public
+domain under CC0 1.0 Universal, to the
+extent permitted by applicable law. Full instrument:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+This dedication does not apply to upstream software, archived papers or model
+outputs, or the external LongMemEval dataset. Those materials retain their own
+terms. Companion software and the BrowserMemex source snapshot use MIT as
+identified separately.

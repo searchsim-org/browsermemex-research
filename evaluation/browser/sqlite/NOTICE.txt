@@ -1,0 +1,8 @@
+Browser SQLite assets copied without modification from:
+@sqlite.org/sqlite-wasm version 3.53.0-build1
+https://github.com/sqlite/sqlite-wasm
+
+The npm package declares Apache-2.0 licensing; the Apache License text is
+included in Apache-2.0.txt. SQLite itself is in the public domain; this notice
+does not change the licensing of upstream components. The package's original
+metadata, pinned registry URL and integrity are retained in package-lock.json.

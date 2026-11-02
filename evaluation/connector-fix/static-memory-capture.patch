@@ -1,0 +1,21 @@
+--- a/packages/extension/src/background/modules/mcp-bridge.js
++++ b/packages/extension/src/background/modules/mcp-bridge.js
+@@ -10,6 +10,10 @@
+  * messaging polling keeps things working.
+  */
+ 
++
++// MV3 service workers cannot load import() chunks. Keep this privacy-enforcing
++// capture path in the worker's static graph; no work runs until called.
++import { captureFact } from './nugget-memory.js';
+ 
+ const NATIVE_HOST_NAME = 'com.browser_memex.oauth_host';
+ const POLL_INTERVAL_MS = 500;
+@@ -538,7 +542,6 @@
+       // Privacy-enforcing capture path. Used by external agents to deposit
+       // facts they discover during browsing. Sticks credentials redaction
+       // + disabledDomains check between the agent and the store.
+-      const { captureFact } = await import('./nugget-memory.js');
+       return captureFact({
+         kind: args.kind,
+         fact: args.fact,

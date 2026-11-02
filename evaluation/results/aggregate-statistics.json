@@ -1,0 +1,1026 @@
+{
+  "oracle-noise0": {
+    "latest": {
+      "answerAccuracy": {
+        "mean": 0.6284848484848484,
+        "ci95HalfWidth": 0.01389815046697805
+      },
+      "wrongAnswerRate": {
+        "mean": 0.3715151515151515,
+        "ci95HalfWidth": 0.013898150466978022
+      },
+      "coverage": {
+        "mean": 0.9090909090909091,
+        "ci95HalfWidth": 0.0
+      },
+      "validEvidenceRecall": {
+        "mean": 0.6072291166323154,
+        "ci95HalfWidth": 0.01617820509129065
+      }
+    },
+    "bm25": {
+      "answerAccuracy": {
+        "mean": 0.20484848484848484,
+        "ci95HalfWidth": 0.009698325892864346
+      },
+      "wrongAnswerRate": {
+        "mean": 0.7951515151515152,
+        "ci95HalfWidth": 0.009698325892864325
+      },
+      "coverage": {
+        "mean": 0.9090909090909091,
+        "ci95HalfWidth": 0.0
+      },
+      "validEvidenceRecall": {
+        "mean": 0.9873343174945626,
+        "ci95HalfWidth": 0.003868291858549754
+      }
+    },
+    "bm25-time": {
+      "answerAccuracy": {
+        "mean": 0.9887878787878788,
+        "ci95HalfWidth": 0.0034175675467211374
+      },
+      "wrongAnswerRate": {
+        "mean": 0,
+        "ci95HalfWidth": 0.0
+      },
+      "coverage": {
+        "mean": 0.8740909090909091,
+        "ci95HalfWidth": 0.004067719005769978
+      },
+      "validEvidenceRecall": {
+        "mean": 0.9873343174945626,
+        "ci95HalfWidth": 0.003868291858549754
+      }
+    },
+    "bm25-time-recency": {
+      "answerAccuracy": {
+        "mean": 0.9887878787878788,
+        "ci95HalfWidth": 0.0034175675467211374
+      },
+      "wrongAnswerRate": {
+        "mean": 0,
+        "ci95HalfWidth": 0.0
+      },
+      "coverage": {
+        "mean": 0.8740909090909091,
+        "ci95HalfWidth": 0.004067719005769978
+      },
+      "validEvidenceRecall": {
+        "mean": 0.9873343174945626,
+        "ci95HalfWidth": 0.003868291858549754
+      }
+    },
+    "latest-valid": {
+      "answerAccuracy": {
+        "mean": 0.9887878787878788,
+        "ci95HalfWidth": 0.0034175675467211374
+      },
+      "wrongAnswerRate": {
+        "mean": 0,
+        "ci95HalfWidth": 0.0
+      },
+      "coverage": {
+        "mean": 0.8740909090909091,
+        "ci95HalfWidth": 0.004067719005769978
+      },
+      "validEvidenceRecall": {
+        "mean": 0.9873343174945626,
+        "ci95HalfWidth": 0.003868291858549754
+      }
+    },
+    "webnugget": {
+      "answerAccuracy": {
+        "mean": 0.9887878787878788,
+        "ci95HalfWidth": 0.0034175675467211374
+      },
+      "wrongAnswerRate": {
+        "mean": 0,
+        "ci95HalfWidth": 0.0
+      },
+      "coverage": {
+        "mean": 0.8740909090909091,
+        "ci95HalfWidth": 0.004067719005769978
+      },
+      "validEvidenceRecall": {
+        "mean": 0.9873343174945626,
+        "ci95HalfWidth": 0.003868291858549754
+      }
+    },
+    "webnugget-contested": {
+      "answerAccuracy": {
+        "mean": 0.9887878787878788,
+        "ci95HalfWidth": 0.0034175675467211374
+      },
+      "wrongAnswerRate": {
+        "mean": 0,
+        "ci95HalfWidth": 0.0
+      },
+      "coverage": {
+        "mean": 0.8740909090909091,
+        "ci95HalfWidth": 0.004067719005769978
+      },
+      "validEvidenceRecall": {
+        "mean": 0.9873343174945626,
+        "ci95HalfWidth": 0.003868291858549754
+      }
+    }
+  },
+  "oracle-noise0.05": {
+    "latest": {
+      "answerAccuracy": {
+        "mean": 0.6039393939393939,
+        "ci95HalfWidth": 0.017852621424291688
+      },
+      "wrongAnswerRate": {
+        "mean": 0.39606060606060606,
+        "ci95HalfWidth": 0.017852621424291663
+      },
+      "coverage": {
+        "mean": 0.9090909090909091,
+        "ci95HalfWidth": 0.0
+      },
+      "validEvidenceRecall": {
+        "mean": 0.5795078145074297,
+        "ci95HalfWidth": 0.020760439270062214
+      }
+    },
+    "bm25": {
+      "answerAccuracy": {
+        "mean": 0.20696969696969697,
+        "ci95HalfWidth": 0.010835915328065562
+      },
+      "wrongAnswerRate": {
+        "mean": 0.7930303030303031,
+        "ci95HalfWidth": 0.010835915328065545
+      },
+      "coverage": {
+        "mean": 0.9090909090909091,
+        "ci95HalfWidth": 0.0
+      },
+      "validEvidenceRecall": {
+        "mean": 0.9389050917816523,
+        "ci95HalfWidth": 0.009284453947796888
+      }
+    },
+    "bm25-time": {
+      "answerAccuracy": {
+        "mean": 0.943939393939394,
+        "ci95HalfWidth": 0.008009384530647827
+      },
+      "wrongAnswerRate": {
+        "mean": 0.044848484848484846,
+        "ci95HalfWidth": 0.007418657711862083
+      },
+      "coverage": {
+        "mean": 0.8740909090909091,
+        "ci95HalfWidth": 0.004067719005769978
+      },
+      "validEvidenceRecall": {
+        "mean": 0.9366790616249538,
+        "ci95HalfWidth": 0.009000638292360615
+      }
+    },
+    "bm25-time-recency": {
+      "answerAccuracy": {
+        "mean": 0.943939393939394,
+        "ci95HalfWidth": 0.008009384530647827
+      },
+      "wrongAnswerRate": {
+        "mean": 0.044848484848484846,
+        "ci95HalfWidth": 0.007418657711862083
+      },
+      "coverage": {
+        "mean": 0.8740909090909091,
+        "ci95HalfWidth": 0.004067719005769978
+      },
+      "validEvidenceRecall": {
+        "mean": 0.9366790616249538,
+        "ci95HalfWidth": 0.009000638292360615
+      }
+    },
+    "latest-valid": {
+      "answerAccuracy": {
+        "mean": 0.943939393939394,
+        "ci95HalfWidth": 0.008009384530647827
+      },
+      "wrongAnswerRate": {
+        "mean": 0.044848484848484846,
+        "ci95HalfWidth": 0.007418657711862083
+      },
+      "coverage": {
+        "mean": 0.8740909090909091,
+        "ci95HalfWidth": 0.004067719005769978
+      },
+      "validEvidenceRecall": {
+        "mean": 0.9366790616249538,
+        "ci95HalfWidth": 0.009000638292360615
+      }
+    },
+    "webnugget": {
+      "answerAccuracy": {
+        "mean": 0.918939393939394,
+        "ci95HalfWidth": 0.009046925369717468
+      },
+      "wrongAnswerRate": {
+        "mean": 0.026515151515151516,
+        "ci95HalfWidth": 0.005321145453446178
+      },
+      "coverage": {
+        "mean": 0.8307575757575758,
+        "ci95HalfWidth": 0.004023978820544793
+      },
+      "validEvidenceRecall": {
+        "mean": 0.9084440608692875,
+        "ci95HalfWidth": 0.01009882791034224
+      }
+    },
+    "webnugget-contested": {
+      "answerAccuracy": {
+        "mean": 0.918939393939394,
+        "ci95HalfWidth": 0.009046925369717468
+      },
+      "wrongAnswerRate": {
+        "mean": 0.026515151515151516,
+        "ci95HalfWidth": 0.005321145453446178
+      },
+      "coverage": {
+        "mean": 0.8307575757575758,
+        "ci95HalfWidth": 0.004023978820544793
+      },
+      "validEvidenceRecall": {
+        "mean": 0.9084440608692875,
+        "ci95HalfWidth": 0.01009882791034224
+      }
+    }
+  },
+  "oracle-noise0.1": {
+    "latest": {
+      "answerAccuracy": {
+        "mean": 0.5777272727272728,
+        "ci95HalfWidth": 0.019204101668678
+      },
+      "wrongAnswerRate": {
+        "mean": 0.4222727272727273,
+        "ci95HalfWidth": 0.019204101668677982
+      },
+      "coverage": {
+        "mean": 0.9090909090909091,
+        "ci95HalfWidth": 0.0
+      },
+      "validEvidenceRecall": {
+        "mean": 0.5499011919943835,
+        "ci95HalfWidth": 0.022287892476607583
+      }
+    },
+    "bm25": {
+      "answerAccuracy": {
+        "mean": 0.21318181818181817,
+        "ci95HalfWidth": 0.01683482517398359
+      },
+      "wrongAnswerRate": {
+        "mean": 0.7868181818181817,
+        "ci95HalfWidth": 0.01683482517398358
+      },
+      "coverage": {
+        "mean": 0.9090909090909091,
+        "ci95HalfWidth": 0.0
+      },
+      "validEvidenceRecall": {
+        "mean": 0.8959523953308107,
+        "ci95HalfWidth": 0.014414481045717959
+      }
+    },
+    "bm25-time": {
+      "answerAccuracy": {
+        "mean": 0.8996969696969697,
+        "ci95HalfWidth": 0.010592287697272775
+      },
+      "wrongAnswerRate": {
+        "mean": 0.0890909090909091,
+        "ci95HalfWidth": 0.01090104538307417
+      },
+      "coverage": {
+        "mean": 0.8740909090909091,
+        "ci95HalfWidth": 0.004067719005769978
+      },
+      "validEvidenceRecall": {
+        "mean": 0.886709910593044,
+        "ci95HalfWidth": 0.0118138884782424
+      }
+    },
+    "bm25-time-recency": {
+      "answerAccuracy": {
+        "mean": 0.8996969696969697,
+        "ci95HalfWidth": 0.010592287697272775
+      },
+      "wrongAnswerRate": {
+        "mean": 0.0890909090909091,
+        "ci95HalfWidth": 0.01090104538307417
+      },
+      "coverage": {
+        "mean": 0.8740909090909091,
+        "ci95HalfWidth": 0.004067719005769978
+      },
+      "validEvidenceRecall": {
+        "mean": 0.886709910593044,
+        "ci95HalfWidth": 0.0118138884782424
+      }
+    },
+    "latest-valid": {
+      "answerAccuracy": {
+        "mean": 0.8996969696969697,
+        "ci95HalfWidth": 0.010592287697272775
+      },
+      "wrongAnswerRate": {
+        "mean": 0.0890909090909091,
+        "ci95HalfWidth": 0.01090104538307417
+      },
+      "coverage": {
+        "mean": 0.8740909090909091,
+        "ci95HalfWidth": 0.004067719005769978
+      },
+      "validEvidenceRecall": {
+        "mean": 0.886709910593044,
+        "ci95HalfWidth": 0.0118138884782424
+      }
+    },
+    "webnugget": {
+      "answerAccuracy": {
+        "mean": 0.8495454545454545,
+        "ci95HalfWidth": 0.01598559242424242
+      },
+      "wrongAnswerRate": {
+        "mean": 0.05454545454545454,
+        "ci95HalfWidth": 0.010021392499796002
+      },
+      "coverage": {
+        "mean": 0.7893939393939394,
+        "ci95HalfWidth": 0.007495782975868878
+      },
+      "validEvidenceRecall": {
+        "mean": 0.8300653079557995,
+        "ci95HalfWidth": 0.017831713209736665
+      }
+    },
+    "webnugget-contested": {
+      "answerAccuracy": {
+        "mean": 0.8495454545454545,
+        "ci95HalfWidth": 0.01598559242424242
+      },
+      "wrongAnswerRate": {
+        "mean": 0.05454545454545454,
+        "ci95HalfWidth": 0.010021392499796002
+      },
+      "coverage": {
+        "mean": 0.7893939393939394,
+        "ci95HalfWidth": 0.007495782975868878
+      },
+      "validEvidenceRecall": {
+        "mean": 0.8300653079557995,
+        "ci95HalfWidth": 0.017831713209736665
+      }
+    }
+  },
+  "oracle-noise0.2": {
+    "latest": {
+      "answerAccuracy": {
+        "mean": 0.526969696969697,
+        "ci95HalfWidth": 0.022854226803640944
+      },
+      "wrongAnswerRate": {
+        "mean": 0.473030303030303,
+        "ci95HalfWidth": 0.022854226803640923
+      },
+      "coverage": {
+        "mean": 0.9090909090909091,
+        "ci95HalfWidth": 0.0
+      },
+      "validEvidenceRecall": {
+        "mean": 0.49257516982006305,
+        "ci95HalfWidth": 0.026541259807767607
+      }
+    },
+    "bm25": {
+      "answerAccuracy": {
+        "mean": 0.21424242424242423,
+        "ci95HalfWidth": 0.017337158307562533
+      },
+      "wrongAnswerRate": {
+        "mean": 0.7857575757575758,
+        "ci95HalfWidth": 0.01733715830756254
+      },
+      "coverage": {
+        "mean": 0.9090909090909091,
+        "ci95HalfWidth": 0.0
+      },
+      "validEvidenceRecall": {
+        "mean": 0.8102189661939058,
+        "ci95HalfWidth": 0.026045711686203236
+      }
+    },
+    "bm25-time": {
+      "answerAccuracy": {
+        "mean": 0.806060606060606,
+        "ci95HalfWidth": 0.024165851874495888
+      },
+      "wrongAnswerRate": {
+        "mean": 0.18272727272727274,
+        "ci95HalfWidth": 0.024333697646255602
+      },
+      "coverage": {
+        "mean": 0.8740909090909091,
+        "ci95HalfWidth": 0.004067719005769978
+      },
+      "validEvidenceRecall": {
+        "mean": 0.7809552498720179,
+        "ci95HalfWidth": 0.026972289527947745
+      }
+    },
+    "bm25-time-recency": {
+      "answerAccuracy": {
+        "mean": 0.806060606060606,
+        "ci95HalfWidth": 0.024165851874495888
+      },
+      "wrongAnswerRate": {
+        "mean": 0.18272727272727274,
+        "ci95HalfWidth": 0.024333697646255602
+      },
+      "coverage": {
+        "mean": 0.8740909090909091,
+        "ci95HalfWidth": 0.004067719005769978
+      },
+      "validEvidenceRecall": {
+        "mean": 0.7809552498720179,
+        "ci95HalfWidth": 0.026972289527947745
+      }
+    },
+    "latest-valid": {
+      "answerAccuracy": {
+        "mean": 0.806060606060606,
+        "ci95HalfWidth": 0.024165851874495888
+      },
+      "wrongAnswerRate": {
+        "mean": 0.18272727272727274,
+        "ci95HalfWidth": 0.024333697646255602
+      },
+      "coverage": {
+        "mean": 0.8740909090909091,
+        "ci95HalfWidth": 0.004067719005769978
+      },
+      "validEvidenceRecall": {
+        "mean": 0.7809552498720179,
+        "ci95HalfWidth": 0.026972289527947745
+      }
+    },
+    "webnugget": {
+      "answerAccuracy": {
+        "mean": 0.7195454545454546,
+        "ci95HalfWidth": 0.028789253342738373
+      },
+      "wrongAnswerRate": {
+        "mean": 0.11757575757575757,
+        "ci95HalfWidth": 0.01436462901979813
+      },
+      "coverage": {
+        "mean": 0.7224242424242424,
+        "ci95HalfWidth": 0.014024903208929915
+      },
+      "validEvidenceRecall": {
+        "mean": 0.6832356560549532,
+        "ci95HalfWidth": 0.03205072558798046
+      }
+    },
+    "webnugget-contested": {
+      "answerAccuracy": {
+        "mean": 0.7195454545454546,
+        "ci95HalfWidth": 0.028789253342738373
+      },
+      "wrongAnswerRate": {
+        "mean": 0.11757575757575757,
+        "ci95HalfWidth": 0.01436462901979813
+      },
+      "coverage": {
+        "mean": 0.7224242424242424,
+        "ci95HalfWidth": 0.014024903208929915
+      },
+      "validEvidenceRecall": {
+        "mean": 0.6832356560549532,
+        "ci95HalfWidth": 0.03205072558798046
+      }
+    }
+  },
+  "ttl-noise0": {
+    "latest": {
+      "answerAccuracy": {
+        "mean": 0.6284848484848484,
+        "ci95HalfWidth": 0.01389815046697805
+      },
+      "wrongAnswerRate": {
+        "mean": 0.3715151515151515,
+        "ci95HalfWidth": 0.013898150466978022
+      },
+      "coverage": {
+        "mean": 0.9090909090909091,
+        "ci95HalfWidth": 0.0
+      },
+      "validEvidenceRecall": {
+        "mean": 0.6072291166323154,
+        "ci95HalfWidth": 0.01617820509129065
+      }
+    },
+    "bm25": {
+      "answerAccuracy": {
+        "mean": 0.20484848484848484,
+        "ci95HalfWidth": 0.009698325892864346
+      },
+      "wrongAnswerRate": {
+        "mean": 0.7951515151515152,
+        "ci95HalfWidth": 0.009698325892864325
+      },
+      "coverage": {
+        "mean": 0.9090909090909091,
+        "ci95HalfWidth": 0.0
+      },
+      "validEvidenceRecall": {
+        "mean": 0.9873343174945626,
+        "ci95HalfWidth": 0.003868291858549754
+      }
+    },
+    "bm25-time": {
+      "answerAccuracy": {
+        "mean": 0.2956060606060606,
+        "ci95HalfWidth": 0.006462508698770018
+      },
+      "wrongAnswerRate": {
+        "mean": 0.36015151515151517,
+        "ci95HalfWidth": 0.006671356270273982
+      },
+      "coverage": {
+        "mean": 0.5501515151515152,
+        "ci95HalfWidth": 0.0029296518174428956
+      },
+      "validEvidenceRecall": {
+        "mean": 0.6053388094663897,
+        "ci95HalfWidth": 0.00438877324375146
+      }
+    },
+    "bm25-time-recency": {
+      "answerAccuracy": {
+        "mean": 0.6415151515151516,
+        "ci95HalfWidth": 0.003957462192571049
+      },
+      "wrongAnswerRate": {
+        "mean": 0.014242424242424242,
+        "ci95HalfWidth": 0.002039290379049133
+      },
+      "coverage": {
+        "mean": 0.5501515151515152,
+        "ci95HalfWidth": 0.0029296518174428956
+      },
+      "validEvidenceRecall": {
+        "mean": 0.6053388094663897,
+        "ci95HalfWidth": 0.00438877324375146
+      }
+    },
+    "latest-valid": {
+      "answerAccuracy": {
+        "mean": 0.6415151515151516,
+        "ci95HalfWidth": 0.003957462192571049
+      },
+      "wrongAnswerRate": {
+        "mean": 0.014242424242424242,
+        "ci95HalfWidth": 0.002039290379049133
+      },
+      "coverage": {
+        "mean": 0.5501515151515152,
+        "ci95HalfWidth": 0.0029296518174428956
+      },
+      "validEvidenceRecall": {
+        "mean": 0.6053388094663897,
+        "ci95HalfWidth": 0.00438877324375146
+      }
+    },
+    "webnugget": {
+      "answerAccuracy": {
+        "mean": 0.35348484848484846,
+        "ci95HalfWidth": 0.010466234564014777
+      },
+      "wrongAnswerRate": {
+        "mean": 0.008787878787878787,
+        "ci95HalfWidth": 0.00385553617435808
+      },
+      "coverage": {
+        "mean": 0.25287878787878787,
+        "ci95HalfWidth": 0.009986012362877852
+      },
+      "validEvidenceRecall": {
+        "mean": 0.2757202646976826,
+        "ci95HalfWidth": 0.010521033498023205
+      }
+    },
+    "webnugget-contested": {
+      "answerAccuracy": {
+        "mean": 0.40424242424242424,
+        "ci95HalfWidth": 0.009134525399435326
+      },
+      "wrongAnswerRate": {
+        "mean": 0.11106060606060607,
+        "ci95HalfWidth": 0.005588786175980555
+      },
+      "coverage": {
+        "mean": 0.4096969696969697,
+        "ci95HalfWidth": 0.011078178840524427
+      },
+      "validEvidenceRecall": {
+        "mean": 0.44360807204672176,
+        "ci95HalfWidth": 0.01250901749051518
+      }
+    }
+  },
+  "ttl-noise0.05": {
+    "latest": {
+      "answerAccuracy": {
+        "mean": 0.6039393939393939,
+        "ci95HalfWidth": 0.017852621424291688
+      },
+      "wrongAnswerRate": {
+        "mean": 0.39606060606060606,
+        "ci95HalfWidth": 0.017852621424291663
+      },
+      "coverage": {
+        "mean": 0.9090909090909091,
+        "ci95HalfWidth": 0.0
+      },
+      "validEvidenceRecall": {
+        "mean": 0.5795078145074297,
+        "ci95HalfWidth": 0.020760439270062214
+      }
+    },
+    "bm25": {
+      "answerAccuracy": {
+        "mean": 0.20696969696969697,
+        "ci95HalfWidth": 0.010835915328065562
+      },
+      "wrongAnswerRate": {
+        "mean": 0.7930303030303031,
+        "ci95HalfWidth": 0.010835915328065545
+      },
+      "coverage": {
+        "mean": 0.9090909090909091,
+        "ci95HalfWidth": 0.0
+      },
+      "validEvidenceRecall": {
+        "mean": 0.9389050917816523,
+        "ci95HalfWidth": 0.009284453947796888
+      }
+    },
+    "bm25-time": {
+      "answerAccuracy": {
+        "mean": 0.28939393939393937,
+        "ci95HalfWidth": 0.009335729434322466
+      },
+      "wrongAnswerRate": {
+        "mean": 0.36636363636363634,
+        "ci95HalfWidth": 0.008636622327634838
+      },
+      "coverage": {
+        "mean": 0.5501515151515152,
+        "ci95HalfWidth": 0.0029296518174428956
+      },
+      "validEvidenceRecall": {
+        "mean": 0.5747033214003644,
+        "ci95HalfWidth": 0.010053911770562633
+      }
+    },
+    "bm25-time-recency": {
+      "answerAccuracy": {
+        "mean": 0.6134848484848485,
+        "ci95HalfWidth": 0.008933742080752621
+      },
+      "wrongAnswerRate": {
+        "mean": 0.042272727272727274,
+        "ci95HalfWidth": 0.007051772601277902
+      },
+      "coverage": {
+        "mean": 0.5501515151515152,
+        "ci95HalfWidth": 0.0029296518174428956
+      },
+      "validEvidenceRecall": {
+        "mean": 0.5747033214003644,
+        "ci95HalfWidth": 0.010053911770562633
+      }
+    },
+    "latest-valid": {
+      "answerAccuracy": {
+        "mean": 0.6134848484848485,
+        "ci95HalfWidth": 0.008933742080752621
+      },
+      "wrongAnswerRate": {
+        "mean": 0.042272727272727274,
+        "ci95HalfWidth": 0.007051772601277902
+      },
+      "coverage": {
+        "mean": 0.5501515151515152,
+        "ci95HalfWidth": 0.0029296518174428956
+      },
+      "validEvidenceRecall": {
+        "mean": 0.5736757764074852,
+        "ci95HalfWidth": 0.009895806033615983
+      }
+    },
+    "webnugget": {
+      "answerAccuracy": {
+        "mean": 0.33515151515151514,
+        "ci95HalfWidth": 0.00942064433563683
+      },
+      "wrongAnswerRate": {
+        "mean": 0.025303030303030303,
+        "ci95HalfWidth": 0.003968625718817106
+      },
+      "coverage": {
+        "mean": 0.25166666666666665,
+        "ci95HalfWidth": 0.007965072243009658
+      },
+      "validEvidenceRecall": {
+        "mean": 0.25569522292364527,
+        "ci95HalfWidth": 0.008613429302885492
+      }
+    },
+    "webnugget-contested": {
+      "answerAccuracy": {
+        "mean": 0.3846969696969697,
+        "ci95HalfWidth": 0.008397679624190572
+      },
+      "wrongAnswerRate": {
+        "mean": 0.13,
+        "ci95HalfWidth": 0.007483969283773882
+      },
+      "coverage": {
+        "mean": 0.4090909090909091,
+        "ci95HalfWidth": 0.010663056372309958
+      },
+      "validEvidenceRecall": {
+        "mean": 0.41537292280792426,
+        "ci95HalfWidth": 0.01206444972785836
+      }
+    }
+  },
+  "ttl-noise0.1": {
+    "latest": {
+      "answerAccuracy": {
+        "mean": 0.5777272727272728,
+        "ci95HalfWidth": 0.019204101668678
+      },
+      "wrongAnswerRate": {
+        "mean": 0.4222727272727273,
+        "ci95HalfWidth": 0.019204101668677982
+      },
+      "coverage": {
+        "mean": 0.9090909090909091,
+        "ci95HalfWidth": 0.0
+      },
+      "validEvidenceRecall": {
+        "mean": 0.5499011919943835,
+        "ci95HalfWidth": 0.022287892476607583
+      }
+    },
+    "bm25": {
+      "answerAccuracy": {
+        "mean": 0.21318181818181817,
+        "ci95HalfWidth": 0.01683482517398359
+      },
+      "wrongAnswerRate": {
+        "mean": 0.7868181818181817,
+        "ci95HalfWidth": 0.01683482517398358
+      },
+      "coverage": {
+        "mean": 0.9090909090909091,
+        "ci95HalfWidth": 0.0
+      },
+      "validEvidenceRecall": {
+        "mean": 0.8959523953308107,
+        "ci95HalfWidth": 0.014414481045717959
+      }
+    },
+    "bm25-time": {
+      "answerAccuracy": {
+        "mean": 0.28484848484848485,
+        "ci95HalfWidth": 0.012046255364251012
+      },
+      "wrongAnswerRate": {
+        "mean": 0.3709090909090909,
+        "ci95HalfWidth": 0.011455148323075634
+      },
+      "coverage": {
+        "mean": 0.5501515151515152,
+        "ci95HalfWidth": 0.0029296518174428956
+      },
+      "validEvidenceRecall": {
+        "mean": 0.5459559395667641,
+        "ci95HalfWidth": 0.011839474591377894
+      }
+    },
+    "bm25-time-recency": {
+      "answerAccuracy": {
+        "mean": 0.5860606060606061,
+        "ci95HalfWidth": 0.009698325892864339
+      },
+      "wrongAnswerRate": {
+        "mean": 0.0696969696969697,
+        "ci95HalfWidth": 0.007436526845043502
+      },
+      "coverage": {
+        "mean": 0.5501515151515152,
+        "ci95HalfWidth": 0.0029296518174428956
+      },
+      "validEvidenceRecall": {
+        "mean": 0.5459559395667641,
+        "ci95HalfWidth": 0.011839474591377894
+      }
+    },
+    "latest-valid": {
+      "answerAccuracy": {
+        "mean": 0.5860606060606061,
+        "ci95HalfWidth": 0.009698325892864339
+      },
+      "wrongAnswerRate": {
+        "mean": 0.0696969696969697,
+        "ci95HalfWidth": 0.007436526845043502
+      },
+      "coverage": {
+        "mean": 0.5501515151515152,
+        "ci95HalfWidth": 0.0029296518174428956
+      },
+      "validEvidenceRecall": {
+        "mean": 0.5427036827218469,
+        "ci95HalfWidth": 0.010674887354424668
+      }
+    },
+    "webnugget": {
+      "answerAccuracy": {
+        "mean": 0.31696969696969696,
+        "ci95HalfWidth": 0.008839149780792954
+      },
+      "wrongAnswerRate": {
+        "mean": 0.04424242424242424,
+        "ci95HalfWidth": 0.006737345574422971
+      },
+      "coverage": {
+        "mean": 0.25227272727272726,
+        "ci95HalfWidth": 0.0071946235412258565
+      },
+      "validEvidenceRecall": {
+        "mean": 0.23498671066578952,
+        "ci95HalfWidth": 0.007766440197846346
+      }
+    },
+    "webnugget-contested": {
+      "answerAccuracy": {
+        "mean": 0.36318181818181816,
+        "ci95HalfWidth": 0.010819571555070807
+      },
+      "wrongAnswerRate": {
+        "mean": 0.1503030303030303,
+        "ci95HalfWidth": 0.008913911330257951
+      },
+      "coverage": {
+        "mean": 0.40787878787878784,
+        "ci95HalfWidth": 0.011965184508036046
+      },
+      "validEvidenceRecall": {
+        "mean": 0.3844000964802036,
+        "ci95HalfWidth": 0.017847501987642504
+      }
+    }
+  },
+  "ttl-noise0.2": {
+    "latest": {
+      "answerAccuracy": {
+        "mean": 0.526969696969697,
+        "ci95HalfWidth": 0.022854226803640944
+      },
+      "wrongAnswerRate": {
+        "mean": 0.473030303030303,
+        "ci95HalfWidth": 0.022854226803640923
+      },
+      "coverage": {
+        "mean": 0.9090909090909091,
+        "ci95HalfWidth": 0.0
+      },
+      "validEvidenceRecall": {
+        "mean": 0.49257516982006305,
+        "ci95HalfWidth": 0.026541259807767607
+      }
+    },
+    "bm25": {
+      "answerAccuracy": {
+        "mean": 0.21424242424242423,
+        "ci95HalfWidth": 0.017337158307562533
+      },
+      "wrongAnswerRate": {
+        "mean": 0.7857575757575758,
+        "ci95HalfWidth": 0.01733715830756254
+      },
+      "coverage": {
+        "mean": 0.9090909090909091,
+        "ci95HalfWidth": 0.0
+      },
+      "validEvidenceRecall": {
+        "mean": 0.8102189661939058,
+        "ci95HalfWidth": 0.026045711686203236
+      }
+    },
+    "bm25-time": {
+      "answerAccuracy": {
+        "mean": 0.2690909090909091,
+        "ci95HalfWidth": 0.012749252413962213
+      },
+      "wrongAnswerRate": {
+        "mean": 0.38666666666666666,
+        "ci95HalfWidth": 0.012489823394400015
+      },
+      "coverage": {
+        "mean": 0.5501515151515152,
+        "ci95HalfWidth": 0.0029296518174428956
+      },
+      "validEvidenceRecall": {
+        "mean": 0.49170889066429607,
+        "ci95HalfWidth": 0.016656557739278023
+      }
+    },
+    "bm25-time-recency": {
+      "answerAccuracy": {
+        "mean": 0.5315151515151515,
+        "ci95HalfWidth": 0.014459790547572715
+      },
+      "wrongAnswerRate": {
+        "mean": 0.12424242424242424,
+        "ci95HalfWidth": 0.012690123111209643
+      },
+      "coverage": {
+        "mean": 0.5501515151515152,
+        "ci95HalfWidth": 0.0029296518174428956
+      },
+      "validEvidenceRecall": {
+        "mean": 0.49170889066429607,
+        "ci95HalfWidth": 0.016656557739278023
+      }
+    },
+    "latest-valid": {
+      "answerAccuracy": {
+        "mean": 0.5315151515151515,
+        "ci95HalfWidth": 0.014459790547572715
+      },
+      "wrongAnswerRate": {
+        "mean": 0.12424242424242424,
+        "ci95HalfWidth": 0.012690123111209643
+      },
+      "coverage": {
+        "mean": 0.5501515151515152,
+        "ci95HalfWidth": 0.0029296518174428956
+      },
+      "validEvidenceRecall": {
+        "mean": 0.48109815342055234,
+        "ci95HalfWidth": 0.015915114095465976
+      }
+    },
+    "webnugget": {
+      "answerAccuracy": {
+        "mean": 0.286969696969697,
+        "ci95HalfWidth": 0.009081092460614464
+      },
+      "wrongAnswerRate": {
+        "mean": 0.07712121212121212,
+        "ci95HalfWidth": 0.008733408495445462
+      },
+      "coverage": {
+        "mean": 0.2548484848484849,
+        "ci95HalfWidth": 0.01307814259732399
+      },
+      "validEvidenceRecall": {
+        "mean": 0.20075811201405772,
+        "ci95HalfWidth": 0.008809323275785026
+      }
+    },
+    "webnugget-contested": {
+      "answerAccuracy": {
+        "mean": 0.3283333333333333,
+        "ci95HalfWidth": 0.008963405943500143
+      },
+      "wrongAnswerRate": {
+        "mean": 0.18363636363636365,
+        "ci95HalfWidth": 0.0061539225460577295
+      },
+      "coverage": {
+        "mean": 0.40636363636363637,
+        "ci95HalfWidth": 0.011102114436683075
+      },
+      "validEvidenceRecall": {
+        "mean": 0.3334028170482768,
+        "ci95HalfWidth": 0.0209099801341232
+      }
+    }
+  }
+}

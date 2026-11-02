@@ -1,0 +1,9 @@
+# Cross-client installed-extension protocol
+
+Specified 2 November 2026 before execution. Test the installed BrowserMemex bridge through its documented WebSocket `memex_request`/`memex_response` protocol on loopback. A research-only relay exposes only memory write/query and active-profile operations, refuses credential/model-proxy operations, and never records unrelated browser traffic. Its purpose is to separate transport/state handoff from model reasoning.
+
+Use freshly generated synthetic subjects containing a unique alphanumeric run prefix. Queries use only that prefix/subject to avoid retrieving unrelated personal memory. Write known string values and a fictitious `.example.invalid` source URL. Record exact values and provenance only for these fixtures. No private browsing records, credentials, external messages or real accounts are used.
+
+First verify that an actual extension registers. If it does not connect, record a blocked result and do not replace the extension with a mock. If connected, client A writes the fixture and terminates; a separately started client B queries it. Use two named real runtimes if their noninteractive MCP configuration permits this; otherwise clearly label SDK clients as transport clients rather than autonomous runtimes. Preserve versions, commands/configuration, raw synthetic tool outputs, timing and exact-match checks. Test current/historical requests only where the available bridge supports explicit requested time. Browser reload and scheduler resumption require their own actual checks and cannot be inferred from process restart.
+
+The research relay is companion code, not a claim that the production extension includes it. Preserve separate provenance for the installed extension and frozen memory-core snapshot. Do not conflate this workflow with free-form task success or a user study. Failed connectivity and unsupported operations remain results, not hidden exclusions.
